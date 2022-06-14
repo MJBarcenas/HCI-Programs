@@ -1,0 +1,78 @@
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.exe
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.deps.json
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.runtimeconfig.json
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.dll
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.pdb
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+C:\Users\van_\source\repos\Accounting\Accounting\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.AssemblyReference.cache
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.Form1.resources
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.GenerateResource.cache
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.AssemblyInfoInputs.cache
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.AssemblyInfo.vb
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.CoreCompileInputs.cache
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.CopyComplete
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.dll
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\refint\Accounting.dll
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.pdb
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.genruntimeconfig.cache
+C:\Users\van_\source\repos\Accounting\Accounting\obj\Debug\net6.0-windows\ref\Accounting.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.exe
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.deps.json
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.runtimeconfig.json
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.pdb
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\ZstdNet.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.AssemblyReference.cache
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.Form1.resources
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.GenerateResource.cache
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.GeneratedMSBuildEditorConfig.editorconfig
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.AssemblyInfoInputs.cache
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.AssemblyInfo.vb
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.CoreCompileInputs.cache
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.CopyComplete
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\refint\Accounting.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.pdb
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.genruntimeconfig.cache
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\ref\Accounting.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.exe
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.deps.json
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.runtimeconfig.json
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.pdb
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.AssemblyReference.cache
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.Form1.resources
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.GenerateResource.cache
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.AssemblyInfoInputs.cache
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.AssemblyInfo.vb
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.CoreCompileInputs.cache
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.CopyComplete
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\refint\Accounting.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.pdb
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.genruntimeconfig.cache
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\ref\Accounting.dll

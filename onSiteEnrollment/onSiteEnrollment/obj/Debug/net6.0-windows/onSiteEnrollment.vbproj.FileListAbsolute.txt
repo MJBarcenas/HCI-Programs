@@ -1,0 +1,52 @@
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\onSiteEnrollment.exe
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\onSiteEnrollment.deps.json
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\onSiteEnrollment.runtimeconfig.json
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\onSiteEnrollment.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\onSiteEnrollment.pdb
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\ZstdNet.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.vbproj.AssemblyReference.cache
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.Form1.resources
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.vbproj.GenerateResource.cache
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.GeneratedMSBuildEditorConfig.editorconfig
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.AssemblyInfoInputs.cache
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.AssemblyInfo.vb
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.vbproj.CoreCompileInputs.cache
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.vbproj.CopyComplete
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\refint\onSiteEnrollment.dll
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.pdb
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.genruntimeconfig.cache
+D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\ref\onSiteEnrollment.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\onSiteEnrollment.exe
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\onSiteEnrollment.deps.json
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\onSiteEnrollment.runtimeconfig.json
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\onSiteEnrollment.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\onSiteEnrollment.pdb
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.vbproj.AssemblyReference.cache
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.Form1.resources
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.vbproj.GenerateResource.cache
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.AssemblyInfoInputs.cache
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.AssemblyInfo.vb
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.vbproj.CoreCompileInputs.cache
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.vbproj.CopyComplete
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\refint\onSiteEnrollment.dll
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.pdb
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.genruntimeconfig.cache
+C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\ref\onSiteEnrollment.dll
