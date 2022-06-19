@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins';
+    background-color: dodgerblue;
+}
+
+.top {
+    background-image: linear-gradient(0deg, rgba(36, 44, 51, 0.5), rgba(36, 44, 51, 0.5)), url(school.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    margin: -8px;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.top .header {
+    position: fixed;
+    width: 100%;
+    height: 62px;
+    margin-top: -70px;
+    background-color: darkblue;
+}
+
+.top .header img {
+    height: 40px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.top .header span {
+    font-size: 30px;
+    float: left;
+    color: white;
+    margin-left: 15px;
+    margin-top: 13px;
+}
+
+.top .header ul li {
+    width: 80px;
+    float: right;
+    text-align: center;
+    border: 1px solid white;
+    background-color: black;
+    opacity: 0.8;
+    padding: 7px;
+    margin-right: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.top .header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.top .header ul li:hover {
+    background-color: dodgerblue;
+}
+
+.top h3 {
+    color: white;
+    font-size: 70px;
+    font-family: Consolas;
+    text-shadow: 1px 1px 1px;
+    text-shadow: dodgerblue 2px 2px 2px;
+}
+
+.top h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.enroll {
+    margin: 1%;
+}
+
+.enroll h1 {
+    border: black 1px solid;
+    border-radius: 5px;
+    background-color: bisque;
+    width: 40%;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.req {
+    height: 500px;
+    width: 100%;
+}
+
+.reqI {
+    border-radius: 5px;
+    padding: 1%;
+    font-size: 20px;
+    width: 29.5%;
+    height: 400px;
+    color: black;
+    background-color: white;
+    float: left;
+    margin: 14px;
+}
+
+.reqI .title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.reqI p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.reg {
+    width: 100%;
+    text-align: center;
+}
+
+.reg p {
+    font-size: 30px;
+}

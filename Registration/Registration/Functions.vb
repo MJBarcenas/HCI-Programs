@@ -49,14 +49,14 @@ Module Functions
         End Try
     End Sub
 
-    Public Sub generateOVRF(ByVal fName As String, ByVal lName As String, ByVal MI As String, ByVal sNum As String, ByVal email As String)
-        Dim param As String() = {fName, lName, MI, sNum, email}
-        Dim toChange As String() = {"<FNAME>", "<LNAME>", "<MI>", "<SNUM>", "<EMAIL>"}
+    Public Sub generateOVRF(ByVal fName As String, ByVal lName As String, ByVal MI As String, ByVal sNum As String, ByVal email As String, ByVal section As String)
+        Dim param As String() = {fName, lName, MI, sNum, email, section}
+        Dim toChange As String() = {"<FNAME>", "<LNAME>", "<MI>", "<SNUM>", "<EMAIL>", "<S>"}
         Dim wordApp As Application = Nothing
         Try
             wordApp = New Application
-            wordApp.Documents.Open("D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Registration\Registration\pig.docx")
-            For i As Integer = 0 To 4
+            wordApp.Documents.Open("D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Registration\Registration\default.docx")
+            For i As Integer = 0 To 5
                 With wordApp.Selection.Find
                     .ClearFormatting()
                     .Text = toChange(i)

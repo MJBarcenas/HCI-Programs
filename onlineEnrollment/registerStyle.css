@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tablinks {
+    border-radius: 5px 5px 0 0;
+    width: 110px;
+    margin-right: -5px;
+    margin-bottom: -10px;
+    border: none;
+    background: white;
+}
+
+.tab button.active {
+    background-color: white;
+    color: black;
+}
+
+.tab button {
+    background-color: rgb(220, 220, 220);
+    color: rgb(100, 100, 100);
+}
+
+.container {
+    display: none;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 0 5px 5px 5px;
+    margin-top: -1px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 150px;
+    background: dodgerblue;
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+}
+
+.user-details .input-box input:focus {
+    border-color: dodgerblue;
+}
+
+form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0;
+}
+
+.gender-details .category label {
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    margin-right: 7px;
+    border: 5px solid transparent;
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot2-1:checked~.category label .one,
+#dot2-2:checked~.category label .two,
+#dot3-1:checked~.category label .one,
+#dot3-2:checked~.category label .two {
+    border-color: #d9d9d9;
+    background-color: dodgerblue;
+}
+
+#first {
+    background-color: white;
+}
+
+#freshmen {
+    display: block;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: dodgerblue;
+}

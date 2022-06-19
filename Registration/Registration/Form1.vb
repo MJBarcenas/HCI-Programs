@@ -178,7 +178,7 @@ Public Class Form1
             cmd2.Parameters.AddWithValue("@section", TextBox4.Text)
             cmd2.ExecuteNonQuery()
             con.Close()
-            generateOVRF(fname, lname, MI, studentNum, TextBox6.Text)
+            generateOVRF(fname, lname, MI, studentNum, TextBox6.Text, section)
             Dim mail = "Congratulations " & TextBox1.Text & "!!!" & Environment.NewLine & "You are now enrolled at Colegio de Montalban" & Environment.NewLine & "Here are your copy of OVRF and credentials to login in the Colegio de Montalban Application." & Environment.NewLine & "Student Number: " & studentNum & Environment.NewLine & "Password: " & password
             sendEmail(mail, "mjbrcns51@gmail.com", "tkzoblulgmuleflh", TextBox6.Text, $"D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Registration\Registration\OVRFs\{studentNum} {lname}, {fname} {MI}.pdf")
             loadData()
