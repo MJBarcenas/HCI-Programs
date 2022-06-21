@@ -17,24 +17,25 @@ body {
 .top .header {
     position: fixed;
     width: 100%;
-    height: 62px;
+    height: 50px;
     margin-top: -70px;
     background-color: darkblue;
 }
 
 .top .header img {
-    height: 40px;
+    height: 30px;
     float: left;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 
 .top .header span {
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 500;
     float: left;
     color: white;
-    margin-left: 15px;
-    margin-top: 13px;
+    margin-left: 10px;
+    margin-top: 8px;
 }
 
 .top .header ul li {
@@ -119,5 +120,16 @@ body {
 }
 
 .reg p {
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+.reg p a {
+    text-decoration: none;
+    color: bisque;
+}
+
+.reg p a:hover {
+    color: orangered
 }

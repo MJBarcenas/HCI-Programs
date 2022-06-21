@@ -109,6 +109,30 @@ form .gender-details .category {
     border: 5px solid transparent;
 }
 
+.files {
+    padding-top: 10px;
+}
+
+.files input {
+    display: none;
+}
+
+.files label {
+    background-color: dodgerblue;
+    padding: 5px;
+    display: block;
+    outline: none;
+    border-radius: 5px;
+    width: 40%;
+    margin-bottom: 10px;
+    color: white;
+    border-bottom-width: 2px;
+}
+
+.files label:hover {
+    border-color: #d9d9d9;
+}
+
 #dot-1:checked~.category label .one,
 #dot-2:checked~.category label .two,
 #dot2-1:checked~.category label .one,
@@ -147,6 +171,10 @@ form .button input {
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 5px;
+}
+
+form .button input:hover {
+    background-color: orange;
 }
 
 body {
