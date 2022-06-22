@@ -90,18 +90,39 @@ body {
 .req {
     height: 500px;
     width: 100%;
+    display: flex;
+    /* establish flex container */
+    flex-direction: row;
+    /* default value; can be omitted */
+    flex-wrap: nowrap;
+    /* default value; can be omitted */
+    justify-content: space-between;
+    text-align: center;
+}
+
+.req .right {
+    float: left;
+}
+
+.req .right {
+    float: right;
+}
+
+.req .center {
+    display: inline;
 }
 
 .reqI {
     border-radius: 5px;
     padding: 1%;
     font-size: 20px;
-    width: 29.5%;
+    width: 29%;
     height: 400px;
     color: black;
     background-color: white;
     float: left;
     margin: 14px;
+    align-self: center;
 }
 
 .reqI .title {

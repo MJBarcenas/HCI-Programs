@@ -1,8 +1,8 @@
 <?php
 function updateStudentNum() {
-    $file = fopen("..\Registration\Registration\studentNum.txt", "r");
-    $Num = fread($file, filesize("..\Registration\Registration\studentNum.txt")) + 1;
-    $file = fopen("..\Registration\Registration\studentNum.txt", "w");
+    $file = fopen("..\studentNum.txt", "r");
+    $Num = fread($file, filesize("..\studentNum.txt")) + 1;
+    $file = fopen("..\studentNum.txt", "w");
     fwrite($file, $Num);
     fclose($file);
 
@@ -35,7 +35,7 @@ function generatePassword() {
     return $password;
 }
 
-function insert($fname, $lname, $mname, $add, $email, $num, $ispaid) {
+function insert($fname, $lname, $mname, $add, $email, $num, $ispaid, $course=NULL) {
     $conn = new mysqli("localhost", "root", "", "onlineenrollment");
 
     if ($conn -> connect_errno) {
@@ -46,10 +46,20 @@ function insert($fname, $lname, $mname, $add, $email, $num, $ispaid) {
     $studentNum = generateStudentNum();
     $password = generatePassword();
 
-    $sql = "INSERT INTO students (studentnum, firstname, lastname, middlename, address, email, number, ispaid, accpass) VALUES('{$studentNum}', '{$fname}', '{$lname}', '{$mname}', '{$add}', '{$email}', '{$num}', $ispaid, '{$password}');";
-    $conn->query($sql);
-    $conn->close();
+    $sql = "SELECT studentnum FROM students WHERE (firstname='{$fname}' AND lastname='{$lname}') AND email='{$email}'";
+    $result = $conn->query($sql);
+    $result = $result->fetch_array(MYSQLI_NUM);
 
-    echo "<script>alert('Enrolled Successfully!')</script>";
+    try {
+        if (count($result) > 0) {
+            echo "<script>alert('You have already enrolled!')</script>";
+        }
+    } catch (\Throwable $th) {
+        $sql = "INSERT INTO students (studentnum, firstname, lastname, middlename, address, email, number, ispaid, accpass, course) VALUES('{$studentNum}', '{$fname}', '{$lname}', '{$mname}', '{$add}', '{$email}', '{$num}', $ispaid, '{$password}', '{$course}');";
+        $conn->query($sql);
+        $conn->close();
+
+        echo "<script>alert('Enrolled Successfully!')</script>";
+    } 
 }
 ?>

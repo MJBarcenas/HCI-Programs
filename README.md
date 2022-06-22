@@ -17,3 +17,10 @@
 
 [Website]
 - Added a generates function and can now upload files and information to database.
+
+## *As of June 23, 2022*
+
+[Website]
+- Clean the php code and centered the divs in index.html.
+- Website is now responsive to wrong user input in file upload.
+- PHP is now checking if you have already enrolled or not.

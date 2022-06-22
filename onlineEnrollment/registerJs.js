@@ -17,3 +17,36 @@ function openTab(evt, tab) {
     document.getElementById(tab).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function check(event) {
+    var id = event.currentTarget.id;
+    var obj = document.getElementsByClassName(id);
+    var file = event.currentTarget.value;
+    var pictures = ['Ffile', 'Tfile'];
+    if (pictures.includes(id)) {
+        var allowed = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+        if (!allowed.exec(file)) {
+            obj[0].style = 'background-color: red';
+            obj[0].innerHTML = 'Invalid file, Try again!';
+
+            file.value = "";
+            return false;
+        } else {
+            obj[0].style = 'background-color: dodgerblue';
+            obj[0].innerHTML = 'Great!';
+        }
+    } else {
+        var allowed = /(\.pdf)$/i;
+        if (!allowed.exec(file)) {
+            obj[0].style = 'background-color: red';
+            obj[0].innerHTML = 'Invalid file, Try again!';
+            alert('wrong!');
+
+            file.value = "";
+            return false;
+        } else {
+            obj[0].style = 'background-color: dodgerblue';
+            obj[0].innerHTML = 'Great!';
+        }
+    }
+}

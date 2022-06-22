@@ -9,6 +9,7 @@
         $no = $_POST['Fno'];
         $add = $_POST['Fadd'];
         $gender = $_POST['Fgender'];
+        $course = $_POST['Fcourse'];
     
         $file = $_FILES['FPfile'];
     
@@ -31,24 +32,36 @@
     
         $fileExt1 = explode('.', $fileName1);
         $fileAExt1 = strtolower(end($fileExt1));
+
+        $file2 = $_FILES['FMfile'];
     
-        if (in_array($fileAExt, array('jpg', 'jpeg', 'png')) and $fileAExt1 == 'pdf') {
-            if ($fileError === 0 and $fileError1 === 0) {
-                if ($fileSize < 100000000 and $fileSize1 < 1000000000) {
-                    mkdir("uploads/Freshmen/".$lname.", ".$fname);
-                    move_uploaded_file($fileTMP, "uploads/Freshmen/".$lname.", ".$fname."/".$lname.", ".$fname.".".$fileAExt);
-                    move_uploaded_file($fileTMP1, "uploads/Freshmen/".$lname.", ".$fname."/".$lname.", ".$fname.".".$fileAExt1);
-                    
-                    insert($fname, $lname, $mname, $add, $email, $no, 0);
-                } else {
-                    echo "<p>One or both files are too big!</p>";
-                }
-            } else {
-                echo "There was an error uploading your files!";
-            }
-        } else {
-            echo "<script>alert('You are not allowed to upload this file type!')</script>";
-        }
+        $fileName2 = $_FILES['FMfile']['name'];
+        $fileType2 = $_FILES['FMfile']['type'];
+        $fileSize2 = $_FILES['FMfile']['size'];
+        $fileError2 = $_FILES['FMfile']['error'];
+        $fileTMP2 = $_FILES['FMfile']['tmp_name'];
+    
+        $fileExt2 = explode('.', $fileName2);
+        $fileAExt2 = strtolower(end($fileExt2));
+
+        $file3 = $_FILES['FFfile'];
+    
+        $fileName3 = $_FILES['FFfile']['name'];
+        $fileType3 = $_FILES['FFfile']['type'];
+        $fileSize3 = $_FILES['FFfile']['size'];
+        $fileError3 = $_FILES['FFfile']['error'];
+        $fileTMP3 = $_FILES['FFfile']['tmp_name'];
+    
+        $fileExt3 = explode('.', $fileName3);
+        $fileAExt3 = strtolower(end($fileExt3));
+    
+        mkdir("uploads/Freshmen/".$lname.", ".$fname);
+        move_uploaded_file($fileTMP, "uploads/Freshmen/{$lname}, {$fname}/[PICTURE] {$lname}, {$fname}.{$fileAExt}");
+        move_uploaded_file($fileTMP1, "uploads/Freshmen/{$lname}, {$fname}/[BIRTH CERTIFICATE] {$lname}, {$fname}.{$fileAExt1}");
+        move_uploaded_file($fileTMP2, "uploads/Freshmen/{$lname}, {$fname}/[GOOD MORAL] {$lname}, {$fname}.{$fileAExt2}");
+        move_uploaded_file($fileTMP3, "uploads/Freshmen/{$lname}, {$fname}/[FORM 138] {$lname}, {$fname}.{$fileAExt3}");
+        insert($fname, $lname, $mname, $add, $email, $no, 0, $course);
+        
     
     } elseif (isset($_POST['Y24'])) {
         $fname = $_POST['Y24fname'];
@@ -81,22 +94,11 @@
         $fileExt1 = explode('.', $fileName1);
         $fileAExt1 = strtolower(end($fileExt1));
 
-        if ($fileAExt == "pdf" and $fileAExt1 == "pdf") {
-            if ($fileError === 0 and $fileError1 === 0) {
-                if ($fileSize < 100000000 and $fileSize1 < 1000000000) {
-                    mkdir("uploads/2nd-4th Year/".$lname.", ".$fname);
-                    move_uploaded_file($fileTMP, "uploads/2nd-4th Year/".$lname.", ".$fname."/[OVRF] ".$lname.", ".$fname.".".$fileAExt);
-                    move_uploaded_file($fileTMP1, "uploads/2nd-4th Year/".$lname.", ".$fname."/[SSOG] ".$lname.", ".$fname.".".$fileAExt1);
-                    echo "<script>alert('UPLOAD SUCCESS!')</script>";
-                } else {
-                    echo "<p>One or both files are too big!</p>";
-                }
-            } else {
-                echo "There was an error uploading your files!";
-            }
-        } else {
-            echo "<script>alert('You are not allowed to upload this file type!')</script>";
-        }
+        mkdir("uploads/2nd-4th Year/".$lname.", ".$fname);
+        move_uploaded_file($fileTMP, "uploads/2nd-4th Year/".$lname.", ".$fname."/[OVRF] ".$lname.", ".$fname.".".$fileAExt);
+        move_uploaded_file($fileTMP1, "uploads/2nd-4th Year/".$lname.", ".$fname."/[SSOG] ".$lname.", ".$fname.".".$fileAExt1);
+        insert($fname, $lname, $mname, $add, $email, $no, 0);
+        
     } elseif (isset($_POST['Trans'])) {
         $fname = $_POST['Tfname'];
         $lname = $_POST['Tlname'];
@@ -106,44 +108,68 @@
         $add = $_POST['Tadd'];
         $gender = $_POST['Tgender'];
 
-        $file = $_FILES['Y24Ofile'];
+        $file = $_FILES['TPfile'];
 
-        $fileName = $_FILES['Y24Ofile']['name'];
-        $fileType = $_FILES['Y24Ofile']['type'];
-        $fileSize = $_FILES['Y24Ofile']['size'];
-        $fileError = $_FILES['Y24Ofile']['error'];
-        $fileTMP = $_FILES['Y24Ofile']['tmp_name'];
+        $fileName = $_FILES['TPfile']['name'];
+        $fileType = $_FILES['TPfile']['type'];
+        $fileSize = $_FILES['TPfile']['size'];
+        $fileError = $_FILES['TPfile']['error'];
+        $fileTMP = $_FILES['TPfile']['tmp_name'];
 
         $fileExt = explode('.', $fileName);
         $fileAExt = strtolower(end($fileExt));
 
-        $file1 = $_FILES['Y24Sfile'];
+        $file1 = $_FILES['TBfile'];
 
-        $fileName1 = $_FILES['Y24Sfile']['name'];
-        $fileType1 = $_FILES['Y24Sfile']['type'];
-        $fileSize1 = $_FILES['Y24Sfile']['size'];
-        $fileError1 = $_FILES['Y24Sfile']['error'];
-        $fileTMP1 = $_FILES['Y24Sfile']['tmp_name'];
+        $fileName1 = $_FILES['TBfile']['name'];
+        $fileType1 = $_FILES['TBfile']['type'];
+        $fileSize1 = $_FILES['TBfile']['size'];
+        $fileError1 = $_FILES['TBfile']['error'];
+        $fileTMP1 = $_FILES['TBfile']['tmp_name'];
         
         $fileExt1 = explode('.', $fileName1);
         $fileAExt1 = strtolower(end($fileExt1));
 
-        if ($fileAExt == "pdf" and $fileAExt1 == "pdf") {
-            if ($fileError === 0 and $fileError1 === 0) {
-                if ($fileSize < 100000000 and $fileSize1 < 1000000000) {
-                    mkdir("uploads/2nd-4th Year/".$lname.", ".$fname);
-                    move_uploaded_file($fileTMP, "uploads/2nd-4th Year/".$lname.", ".$fname."/[OVRF] ".$lname.", ".$fname.".".$fileAExt);
-                    move_uploaded_file($fileTMP1, "uploads/2nd-4th Year/".$lname.", ".$fname."/[SSOG] ".$lname.", ".$fname.".".$fileAExt1);
-                    echo "<script>alert('UPLOAD SUCCESS!')</script>";
-                } else {
-                    echo "<p>One or both files are too big!</p>";
-                }
-            } else {
-                echo "There was an error uploading your files!";
-            }
-        } else {
-            echo "<script>alert('You are not allowed to upload this file type!')</script>";
-        }
+        $file2 = $_FILES['TTfile'];
+
+        $fileName2 = $_FILES['TTfile']['name'];
+        $fileType2 = $_FILES['TTfile']['type'];
+        $fileSize2 = $_FILES['TTfile']['size'];
+        $fileError2 = $_FILES['TTfile']['error'];
+        $fileTMP2 = $_FILES['TTfile']['tmp_name'];
+
+        $fileExt2 = explode('.', $fileName2);
+        $fileAExt2 = strtolower(end($fileExt2));
+
+        $file3 = $_FILES['THfile'];
+
+        $fileName3 = $_FILES['THfile']['name'];
+        $fileType3 = $_FILES['THfile']['type'];
+        $fileSize3 = $_FILES['THfile']['size'];
+        $fileError3 = $_FILES['THfile']['error'];
+        $fileTMP3 = $_FILES['THfile']['tmp_name'];
+        
+        $fileExt3 = explode('.', $fileName3);
+        $fileAExt3 = strtolower(end($fileExt3));
+
+        $file4 = $_FILES['TGfile'];
+
+        $fileName4 = $_FILES['TGfile']['name'];
+        $fileType4 = $_FILES['TGfile']['type'];
+        $fileSize4 = $_FILES['TGfile']['size'];
+        $fileError4 = $_FILES['TGfile']['error'];
+        $fileTMP4 = $_FILES['TGfile']['tmp_name'];
+        
+        $fileExt4 = explode('.', $fileName4);
+        $fileAExt4 = strtolower(end($fileExt4));
+
+        mkdir("uploads/Transferee/".$lname.", ".$fname);
+        move_uploaded_file($fileTMP, "uploads/Transferee/{$lname}, {$fname}/[PICTURE] {$lname}, {$fname}.{$fileAExt}");
+        move_uploaded_file($fileTMP1, "uploads/Transferee/{$lname}, {$fname}/[BIRTH CERTIFICATE] {$lname}, {$fname}.{$fileAExt1}");
+        move_uploaded_file($fileTMP2, "uploads/Transferee/{$lname}, {$fname}/[TRANSCRIPT OF RECORDS] {$lname}, {$fname}.{$fileAExt2}");
+        move_uploaded_file($fileTMP3, "uploads/Transferee/{$lname}, {$fname}/[HONORABLE DISMISSAL] {$lname}, {$fname}.{$fileAExt3}");
+        move_uploaded_file($fileTMP3, "uploads/Transferee/{$lname}, {$fname}/[GOOD MORAL] {$lname}, {$fname}.{$fileAExt3}");
+        insert($fname, $lname, $mname, $add, $email, $no, 0);
     }
 ?>
 
@@ -200,6 +226,18 @@
                         <input type="text" name="Fadd" placeholder="Enter your address" required>
                     </div>
 
+                    <div class="course">
+                        <center>
+                            <label for="course">Choose course: </label>
+                            <select name="Fcourse" id="course" required>
+                                <option hidden disabled selected value>-- select an option --</option>
+                                <option value="BSIT">BSIT</option>
+                                <option value="BSIT">BSCPE</option>
+                                <option value="BSIT">BSED</option>
+                            </select>
+                        </center>
+                    </div>
+
                 </div>
 
                 <div class="gender-details">
@@ -223,10 +261,14 @@
 
                 <div class="files">
                     <center>
-                        <input type="file" name="FPfile" id="Ffile">
-                        <label for="Ffile">Upload 1x1 Picture</label>
-                        <input type="file" name="FBfile" id="Ffile1">
-                        <label for="Ffile1">Upload Birth Certificate</label>
+                        <input type="file" onchange="check(event)" name="FPfile" id="Ffile" required>
+                        <label class="Ffile" for="Ffile">Upload 2x2 Picture</label>
+                        <input type="file" onchange="check(event)" name="FBfile" id="Ffile1" required>
+                        <label class="Ffile1" for="Ffile1">Upload Birth Certificate</label>
+                        <input type="file" onchange="check(event)" name="FMfile" id="Ffile2" required>
+                        <label class="Ffile2" for="Ffile2">Upload Moral Certificate</label>
+                        <input type="file" onchange="check(event)" name="FFfile" id="Ffile3" required>
+                        <label class="Ffile3" for="Ffile3">Upload Form 138</label>
                     </center>
                 </div>
 
@@ -295,10 +337,10 @@
 
                 <div class="files">
                     <center>
-                        <input type="file" name="Y24Ofile" id="file">
-                        <label for="file">Upload OVRF</label>
-                        <input type="file" name="Y24Sfile" id="file1">
-                        <label for="file1">Upload SOG</label>
+                        <input type="file" onchange="check(event)" name="Y24Ofile" id="Yfile" required>
+                        <label class="Yfile" for="Yfile">Upload OVRF</label>
+                        <input type="file" onchange="check(event)" name="Y24Sfile" id="Yfile1" required>
+                        <label class="Yfile1" for="Yfile1">Upload SOG</label>
                     </center>
                 </div>
 
@@ -366,10 +408,16 @@
 
                 <div class="files">
                     <center>
-                        <input type="file" name="file" id="Tfile">
-                        <label for="Tfile">Upload 1x1 Picture</label>
-                        <input type="file" name="file" id="Tfile1">
-                        <label for="Tfile1">Upload Birth Certificate</label>
+                        <input type="file" onchange="check(event)" name="TPfile" id="Tfile" required>
+                        <label class="Tfile" for="Tfile">Upload 2x2 Picture</label>
+                        <input type="file" onchange="check(event)" name="TBfile" id="Tfile1" required>
+                        <label class="Tfile1" for="Tfile1">Upload Birth Certificate</label>
+                        <input type="file" onchange="check(event)" name="TTfile" id="Tfile2" required>
+                        <label class="Tfile2" for="Tfile2">Upload Transcript of Records</label>
+                        <input type="file" onchange="check(event)" name="THfile" id="Tfile3" required>
+                        <label class="Tfile3" for="Tfile3">Upload Honorable Dismissal</label>
+                        <input type="file" onchange="check(event)" name="TGfile" id="Tfile4" required>
+                        <label class="Tfile4" for="Tfile4">Upload Good Moral Certificate</label>
                     </center>
                 </div>
 
