@@ -30,7 +30,7 @@
 [Website, VB.net]
 - Year and semester are now also included when enrolling.
 - As a 2nd-4th year, you have to give your existing Student NO.
-- Transferees are now able to choose for a course. (Will add year on the next commit)
+- Transferees are now able to choose year and course.
 
 [Website]
 - Can now remove directories that are already existing. (Will also do this for VB.net on the next commit)

@@ -35,7 +35,7 @@ function generatePassword() {
     return $password;
 }
 
-function insert($fname, $lname, $mname, $add, $email, $num, $ispaid, $course, $gender) {
+function insert($fname, $lname, $mname, $add, $email, $num, $ispaid, $course, $gender, $year='1') {
     $conn = new mysqli("localhost", "root", "", "onlineenrollment");
 
     if ($conn -> connect_errno) {
@@ -55,7 +55,7 @@ function insert($fname, $lname, $mname, $add, $email, $num, $ispaid, $course, $g
             echo "<script>alert('You have already enrolled!')</script>";
         }
     } catch (\Throwable $th) {
-        $sql = "INSERT INTO students (studentnum, firstname, lastname, middlename, address, email, number, ispaid, year, accpass, course, gender) VALUES('{$studentNum}', '{$fname}', '{$lname}', '{$mname}', '{$add}', '{$email}', '{$num}', $ispaid, '1', '{$password}', '{$course}', '{$gender}');";
+        $sql = "INSERT INTO students (studentnum, firstname, lastname, middlename, address, email, number, ispaid, year, accpass, course, gender) VALUES('{$studentNum}', '{$fname}', '{$lname}', '{$mname}', '{$add}', '{$email}', '{$num}', $ispaid, '{$year}', '{$password}', '{$course}', '{$gender}');";
         $conn->query($sql);
         $conn->close();
 

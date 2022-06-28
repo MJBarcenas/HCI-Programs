@@ -124,6 +124,7 @@
         $add = $_POST['Tadd'];
         $gender = $_POST['Tgender'];
         $course = $_POST['Tcourse'];
+        $year = $_POST['Tyear'];
 
         $file = $_FILES['TPfile'];
 
@@ -193,7 +194,7 @@
         move_uploaded_file($fileTMP2, "{$path}/[TRANSCRIPT OF RECORDS] {$lname}, {$fname}.{$fileAExt2}");
         move_uploaded_file($fileTMP3, "{$path}/[HONORABLE DISMISSAL] {$lname}, {$fname}.{$fileAExt3}");
         move_uploaded_file($fileTMP4, "{$path}/[GOOD MORAL] {$lname}, {$fname}.{$fileAExt3}");
-        insert($fname, $lname, $mname, $add, $email, $no, 0, $course, $gender);
+        insert($fname, $lname, $mname, $add, $email, $no, 0, $course, $gender, $year);
     }
 ?>
 
@@ -256,8 +257,8 @@
                             <select name="Fcourse" id="course" required>
                                 <option hidden disabled selected value>-- select an option --</option>
                                 <option value="BSIT">BSIT</option>
-                                <option value="BSIT">BSCPE</option>
-                                <option value="BSIT">BSED</option>
+                                <option value="BSCPE">BSCPE</option>
+                                <option value="BSED">BSED</option>
                             </select>
                         </center>
                     </div>
@@ -398,14 +399,27 @@
                         <input type="text" name="Tadd" placeholder="Enter your address" required>
                     </div>
 
+                    <div class="year">
+                        <center>
+                        <label for="year">Select Year Level </label>
+                            <select name="Tyear" id="year" required>
+                                <option hidden disabled selected value>-- select an option --</option>
+                                <option value="1">1st</option>
+                                <option value="2">2nd</option>
+                                <option value="3">3rd</option>
+                                <option value="4">4th</option>
+                            </select>
+                        </center>
+                    </div>
+
                     <div class="course">
                         <center>
                             <label for="course">Choose course </label>
                             <select name="Tcourse" id="course" required>
                                 <option hidden disabled selected value>-- select an option --</option>
                                 <option value="BSIT">BSIT</option>
-                                <option value="BSIT">BSCPE</option>
-                                <option value="BSIT">BSED</option>
+                                <option value="BSCPE">BSCPE</option>
+                                <option value="BSED">BSED</option>
                             </select>
                         </center>
                     </div>

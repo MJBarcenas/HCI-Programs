@@ -114,7 +114,6 @@ Public Class Form1
                     End If
                     For i As Integer = 0 To freshFiles.Length - 1
                         Dim arr() As String = Split(freshFiles(i), "\")
-                        MsgBox(arr.ToString)
                         Dim file As String = arr(arr.Length - 1)
                         saveFile(freshFiles(i), $"{path}\[{freshFilesNames(i)}] {file}")
                     Next

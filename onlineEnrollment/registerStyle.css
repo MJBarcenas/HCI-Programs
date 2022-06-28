@@ -144,23 +144,31 @@ form .gender-details .category {
 }
 
 .course,
-.sNum {
+.sNum,
+.year {
     width: 100%;
     margin: 10px 0 10px 0;
 }
 
-.course select {
+.course label,
+.year label {
+    display: block;
+    font-weight: 500;
+}
+
+.course select,
+.year select {
     margin-left: 5px;
     outline: none;
     padding: 5px 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     border-bottom-width: 2px;
-    font-weight: 500;
     font-size: 16px;
 }
 
-.course select:valid {
+.course select:valid,
+.year select:valid {
     background-color: dodgerblue;
     border: none;
     color: white;
@@ -212,7 +220,7 @@ form .button input:hover {
 
 body {
     display: flex;
-    height: 120vh;
+    height: 150vh;
     justify-content: center;
     align-items: center;
     padding: 10px;
