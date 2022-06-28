@@ -54,6 +54,9 @@ Partial Class Form1
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Button14 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -391,13 +394,46 @@ Partial Class Form1
         Me.Button13.UseVisualStyleBackColor = True
         Me.Button13.Visible = False
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label11.Location = New System.Drawing.Point(955, 74)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(114, 38)
+        Me.Label11.TabIndex = 0
+        Me.Label11.Text = "Gender:"
+        Me.Label11.Visible = False
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"Male", "Female"})
+        Me.ComboBox4.Location = New System.Drawing.Point(1125, 67)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(405, 45)
+        Me.ComboBox4.TabIndex = 3
+        Me.ComboBox4.Visible = False
+        '
+        'Button14
+        '
+        Me.Button14.Location = New System.Drawing.Point(944, 441)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(160, 37)
+        Me.Button14.TabIndex = 4
+        Me.Button14.Text = "Button14"
+        Me.Button14.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1546, 534)
+        Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button10)
@@ -413,6 +449,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Number)
         Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Address)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label4)
@@ -467,4 +504,8 @@ Partial Class Form1
     Friend WithEvents Button10 As Button
     Friend WithEvents Button12 As Button
     Friend WithEvents Button13 As Button
+    Friend WithEvents Label11 As Label
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button14 As Button
 End Class

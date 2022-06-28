@@ -2,14 +2,14 @@
     include_once 'includes/functions.php';
 
     if (isset($_POST['Fresh'])) {
-        $fname = $_POST['Ffname'];
-        $lname = $_POST['Flname'];
-        $mname = $_POST['Fmname'];
-        $email = $_POST['Femail'];
-        $no = $_POST['Fno'];
-        $add = $_POST['Fadd'];
-        $gender = $_POST['Fgender'];
-        $course = $_POST['Fcourse'];
+        $fname = trim($_POST['Ffname']);
+        $lname = trim($_POST['Flname']);
+        $mname = trim($_POST['Fmname']);
+        $email = trim($_POST['Femail']);
+        $no = trim($_POST['Fno']);
+        $add = trim($_POST['Fadd']);
+        $gender = trim($_POST['Fgender']);
+        $course = trim($_POST['Fcourse']);
     
         $file = $_FILES['FPfile'];
     
@@ -71,13 +71,13 @@
         
     
     } elseif (isset($_POST['Y24'])) {
-        $fname = $_POST['Y24fname'];
-        $lname = $_POST['Y24lname'];
-        $mname = $_POST['Y24mname'];
-        $email = $_POST['Y24email'];
-        $no = $_POST['Y24no'];
-        $add = $_POST['Y24add'];
-        $sNum = $_POST['sNum'];
+        $fname = trim($_POST['Y24fname']);
+        $lname = trim($_POST['Y24lname']);
+        $mname = trim($_POST['Y24mname']);
+        $email = trim($_POST['Y24email']);
+        $no = trim($_POST['Y24no']);
+        $add = trim($_POST['Y24add']);
+        $sNum = trim($_POST['sNum']);
 
         $file = $_FILES['Y24Ofile'];
 
@@ -116,15 +116,15 @@
         
         
     } elseif (isset($_POST['Trans'])) {
-        $fname = $_POST['Tfname'];
-        $lname = $_POST['Tlname'];
-        $mname = $_POST['Tmname'];
-        $email = $_POST['Temail'];
-        $no = $_POST['Tno'];
-        $add = $_POST['Tadd'];
-        $gender = $_POST['Tgender'];
-        $course = $_POST['Tcourse'];
-        $year = $_POST['Tyear'];
+        $fname = trim($_POST['Tfname']);
+        $lname = trim($_POST['Tlname']);
+        $mname = trim($_POST['Tmname']);
+        $email = trim($_POST['Temail']);
+        $no = trim($_POST['Tno']);
+        $add = trim($_POST['Tadd']);
+        $gender = trim($_POST['Tgender']);
+        $course = trim($_POST['Tcourse']);
+        $year = trim($_POST['Tyear']);
 
         $file = $_FILES['TPfile'];
 

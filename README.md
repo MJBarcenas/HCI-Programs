@@ -31,7 +31,9 @@
 - Year and semester are now also included when enrolling.
 - As a 2nd-4th year, you have to give your existing Student NO.
 - Transferees are now able to choose year and course.
+- Added a safeguard check for user-inputs by using trim() fucntion to remove whitespaces.
+- Can now select a gender for Freshmen and Transferee.
+- Can now remove directories that are already exist.
 
-[Website]
-- Can now remove directories that are already existing. (Will also do this for VB.net on the next commit)
-- Can now select a gender for Freshmen and Transferee. (Will also do this for VB.net on the next commit)
+[VB.net]
+- File upload are now responsive.
