@@ -6,7 +6,7 @@ Public Class Form1
     Dim studentNum As String
 
     Sub loadData()
-        Dim query As String = "select * from students where ispaid=False"
+        Dim query As String = "select studentnum, firstname, lastname, middlename, address, email, number, ispaid, year, section from students where ispaid=False"
         Dim adpt As New MySqlDataAdapter(query, con)
         Dim ds As New DataSet()
         adpt.Fill(ds, "Emp")
@@ -74,7 +74,6 @@ Public Class Form1
         Try
             cmd = con.CreateCommand()
             cmd.CommandText = $"update students set ispaid=@ispaid where studentnum='{studentNum}'"
-            cmd.Parameters.AddWithValue("@name", TextBox1.Text)
             cmd.Parameters.AddWithValue("@ispaid", CheckBox1.Checked())
             cmd.ExecuteNonQuery()
             loadData()
@@ -90,7 +89,7 @@ Public Class Form1
         Dim ds As New DataSet
         Try
             con.Open()
-            adapter = New MySqlDataAdapter($"select * from students where (firstname like '%{TextBox6.Text}%' or lastname like '%{TextBox6.Text}%') and ispaid=False", con)
+            adapter = New MySqlDataAdapter($"select studentnum, firstname, lastname, middlename, address, email, number, ispaid, year, section from students where (firstname like '%{TextBox6.Text}%' or lastname like '%{TextBox6.Text}%') and ispaid=False", con)
             adapter.Fill(ds)
             DataGridView1.DataSource = ds.Tables(0)
             con.Close()

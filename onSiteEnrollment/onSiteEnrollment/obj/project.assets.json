@@ -857,11 +857,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\onSiteEnrollment\\onSiteEnrollment\\onSiteEnrollment.vbproj",
+      "projectUniqueName": "D:\\Programming\\Programs\\onSiteEnrollment\\onSiteEnrollment\\onSiteEnrollment.vbproj",
       "projectName": "onSiteEnrollment",
-      "projectPath": "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\onSiteEnrollment\\onSiteEnrollment\\onSiteEnrollment.vbproj",
+      "projectPath": "D:\\Programming\\Programs\\onSiteEnrollment\\onSiteEnrollment\\onSiteEnrollment.vbproj",
       "packagesPath": "C:\\Users\\van_\\.nuget\\packages\\",
-      "outputPath": "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\onSiteEnrollment\\onSiteEnrollment\\obj\\",
+      "outputPath": "D:\\Programming\\Programs\\onSiteEnrollment\\onSiteEnrollment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\van_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -913,7 +913,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\Registration\\Registration\\Registration.vbproj": {}
+    "C:\\Program Files\\xampp\\htdocs\\Programs\\Registration\\Registration\\Registration.vbproj": {}
   },
   "projects": {
-    "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\Registration\\Registration\\Registration.vbproj": {
+    "C:\\Program Files\\xampp\\htdocs\\Programs\\Registration\\Registration\\Registration.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\Registration\\Registration\\Registration.vbproj",
+        "projectUniqueName": "C:\\Program Files\\xampp\\htdocs\\Programs\\Registration\\Registration\\Registration.vbproj",
         "projectName": "Registration",
-        "projectPath": "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\Registration\\Registration\\Registration.vbproj",
+        "projectPath": "C:\\Program Files\\xampp\\htdocs\\Programs\\Registration\\Registration\\Registration.vbproj",
         "packagesPath": "C:\\Users\\van_\\.nuget\\packages\\",
-        "outputPath": "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\Registration\\Registration\\obj\\",
+        "outputPath": "C:\\Program Files\\xampp\\htdocs\\Programs\\Registration\\Registration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\van_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

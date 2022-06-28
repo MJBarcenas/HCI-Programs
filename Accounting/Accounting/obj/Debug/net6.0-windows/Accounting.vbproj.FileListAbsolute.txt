@@ -76,3 +76,55 @@ C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Acc
 C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.pdb
 C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.genruntimeconfig.cache
 C:\Users\van_\Desktop\Human Computer Interaction\Project\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\ref\Accounting.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.exe
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.deps.json
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.runtimeconfig.json
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.pdb
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.AssemblyReference.cache
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.Form1.resources
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.GenerateResource.cache
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.AssemblyInfoInputs.cache
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.AssemblyInfo.vb
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.CoreCompileInputs.cache
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.CopyComplete
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\refint\Accounting.dll
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.pdb
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.genruntimeconfig.cache
+C:\Program Files\xampp\htdocs\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\ref\Accounting.dll
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.exe
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.deps.json
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.runtimeconfig.json
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.dll
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Accounting.pdb
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\ZstdNet.dll
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.AssemblyReference.cache
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.Form1.resources
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.GenerateResource.cache
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.AssemblyInfoInputs.cache
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.AssemblyInfo.vb
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.CoreCompileInputs.cache
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.vbproj.CopyComplete
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.dll
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\refint\Accounting.dll
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.pdb
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.genruntimeconfig.cache
+D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\ref\Accounting.dll

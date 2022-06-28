@@ -62,7 +62,8 @@ form .user-details .input-box {
     width: calc(100% / 2 - 20px);
 }
 
-.user-details .input-box .details {
+.user-details .input-box .details,
+.sNum .details {
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
@@ -79,7 +80,20 @@ form .user-details .input-box {
     border-bottom-width: 2px;
 }
 
-.user-details .input-box input:focus {
+.sNum input {
+    height: 45px;
+    width: 40%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    margin-left: 10px;
+}
+
+.user-details .input-box input:focus,
+.sNum input:focus {
     border-color: dodgerblue;
 }
 
@@ -129,7 +143,8 @@ form .gender-details .category {
     border-bottom-width: 2px;
 }
 
-.course {
+.course,
+.sNum {
     width: 100%;
     margin: 10px 0 10px 0;
 }

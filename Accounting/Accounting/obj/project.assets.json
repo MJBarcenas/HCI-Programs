@@ -857,11 +857,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\Accounting\\Accounting\\Accounting.vbproj",
+      "projectUniqueName": "D:\\Programming\\Programs\\Accounting\\Accounting\\Accounting.vbproj",
       "projectName": "Accounting",
-      "projectPath": "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\Accounting\\Accounting\\Accounting.vbproj",
+      "projectPath": "D:\\Programming\\Programs\\Accounting\\Accounting\\Accounting.vbproj",
       "packagesPath": "C:\\Users\\van_\\.nuget\\packages\\",
-      "outputPath": "D:\\School\\3rd Year - Second Semester [3I]\\Human Computer Interaction\\Project\\Programs\\Accounting\\Accounting\\obj\\",
+      "outputPath": "D:\\Programming\\Programs\\Accounting\\Accounting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\van_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -913,7 +913,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

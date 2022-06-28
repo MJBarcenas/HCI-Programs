@@ -54,13 +54,20 @@
     
         $fileExt3 = explode('.', $fileName3);
         $fileAExt3 = strtolower(end($fileExt3));
-    
-        mkdir("uploads/Freshmen/".$lname.", ".$fname);
-        move_uploaded_file($fileTMP, "uploads/Freshmen/{$lname}, {$fname}/[PICTURE] {$lname}, {$fname}.{$fileAExt}");
-        move_uploaded_file($fileTMP1, "uploads/Freshmen/{$lname}, {$fname}/[BIRTH CERTIFICATE] {$lname}, {$fname}.{$fileAExt1}");
-        move_uploaded_file($fileTMP2, "uploads/Freshmen/{$lname}, {$fname}/[GOOD MORAL] {$lname}, {$fname}.{$fileAExt2}");
-        move_uploaded_file($fileTMP3, "uploads/Freshmen/{$lname}, {$fname}/[FORM 138] {$lname}, {$fname}.{$fileAExt3}");
-        insert($fname, $lname, $mname, $add, $email, $no, 0, $course);
+
+        if (strtoupper($mname) == "NONE") {
+            $path = "D:/Programming/Programs/uploads/Freshmen/{$lname}, {$fname}";
+            mkdir($path);
+        } else {
+            $path = "D:/Programming/Programs/uploads/Freshmen/{$lname}, {$fname}-{$mname}";
+            mkdir($path);
+        }
+
+        move_uploaded_file($fileTMP, "{$path}/[PICTURE] {$lname}, {$fname}.{$fileAExt}");
+        move_uploaded_file($fileTMP1, "{$path}/[BIRTH CERTIFICATE] {$lname}, {$fname}.{$fileAExt1}");
+        move_uploaded_file($fileTMP2, "{$path}/[GOOD MORAL] {$lname}, {$fname}.{$fileAExt2}");
+        move_uploaded_file($fileTMP3, "{$path}/[FORM 138] {$lname}, {$fname}.{$fileAExt3}");
+        insert($fname, $lname, $mname, $add, $email, $no, 0, $course, $gender);
         
     
     } elseif (isset($_POST['Y24'])) {
@@ -70,7 +77,7 @@
         $email = $_POST['Y24email'];
         $no = $_POST['Y24no'];
         $add = $_POST['Y24add'];
-        $gender = $_POST['Y24gender'];
+        $sNum = $_POST['sNum'];
 
         $file = $_FILES['Y24Ofile'];
 
@@ -94,10 +101,19 @@
         $fileExt1 = explode('.', $fileName1);
         $fileAExt1 = strtolower(end($fileExt1));
 
-        mkdir("uploads/2nd-4th Year/".$lname.", ".$fname);
-        move_uploaded_file($fileTMP, "uploads/2nd-4th Year/".$lname.", ".$fname."/[OVRF] ".$lname.", ".$fname.".".$fileAExt);
-        move_uploaded_file($fileTMP1, "uploads/2nd-4th Year/".$lname.", ".$fname."/[SSOG] ".$lname.", ".$fname.".".$fileAExt1);
-        insert($fname, $lname, $mname, $add, $email, $no, 0);
+        update($fname, $lname, $mname, $add, $email, $no, 0, $sNum);
+
+        if (strtoupper($mname) == "NONE") {
+            $path = "D:/Programming/Programs/uploads/2nd-4th Year/{$lname}, {$fname}";
+            mkdir($path);
+        } else {
+            $path = "D:/Programming/Programs/uploads/2nd-4th Year/{$lname}, {$fname}-{$mname}";
+            mkdir($path);
+        }
+
+        move_uploaded_file($fileTMP, "{$path}/[PICTURE] {$lname}, {$fname}.{$fileAExt}");
+        move_uploaded_file($fileTMP1, "{$path}/[BIRTH CERTIFICATE] {$lname}, {$fname}.{$fileAExt1}");
+        
         
     } elseif (isset($_POST['Trans'])) {
         $fname = $_POST['Tfname'];
@@ -107,6 +123,7 @@
         $no = $_POST['Tno'];
         $add = $_POST['Tadd'];
         $gender = $_POST['Tgender'];
+        $course = $_POST['Tcourse'];
 
         $file = $_FILES['TPfile'];
 
@@ -163,13 +180,20 @@
         $fileExt4 = explode('.', $fileName4);
         $fileAExt4 = strtolower(end($fileExt4));
 
-        mkdir("uploads/Transferee/".$lname.", ".$fname);
-        move_uploaded_file($fileTMP, "uploads/Transferee/{$lname}, {$fname}/[PICTURE] {$lname}, {$fname}.{$fileAExt}");
-        move_uploaded_file($fileTMP1, "uploads/Transferee/{$lname}, {$fname}/[BIRTH CERTIFICATE] {$lname}, {$fname}.{$fileAExt1}");
-        move_uploaded_file($fileTMP2, "uploads/Transferee/{$lname}, {$fname}/[TRANSCRIPT OF RECORDS] {$lname}, {$fname}.{$fileAExt2}");
-        move_uploaded_file($fileTMP3, "uploads/Transferee/{$lname}, {$fname}/[HONORABLE DISMISSAL] {$lname}, {$fname}.{$fileAExt3}");
-        move_uploaded_file($fileTMP3, "uploads/Transferee/{$lname}, {$fname}/[GOOD MORAL] {$lname}, {$fname}.{$fileAExt3}");
-        insert($fname, $lname, $mname, $add, $email, $no, 0);
+        if (strtoupper($mname) == "NONE") {
+            $path = "D:/Programming/Programs/uploads/Transferee/{$lname}, {$fname}";
+            mkdir($path);
+        } else {
+            $path = "D:/Programming/Programs/uploads/Transferee/{$lname}, {$fname}-{$mname}";
+            mkdir($path);
+        }
+
+        move_uploaded_file($fileTMP, "{$path}/[PICTURE] {$lname}, {$fname}.{$fileAExt}");
+        move_uploaded_file($fileTMP1, "{$path}/[BIRTH CERTIFICATE] {$lname}, {$fname}.{$fileAExt1}");
+        move_uploaded_file($fileTMP2, "{$path}/[TRANSCRIPT OF RECORDS] {$lname}, {$fname}.{$fileAExt2}");
+        move_uploaded_file($fileTMP3, "{$path}/[HONORABLE DISMISSAL] {$lname}, {$fname}.{$fileAExt3}");
+        move_uploaded_file($fileTMP4, "{$path}/[GOOD MORAL] {$lname}, {$fname}.{$fileAExt3}");
+        insert($fname, $lname, $mname, $add, $email, $no, 0, $course, $gender);
     }
 ?>
 
@@ -228,7 +252,7 @@
 
                     <div class="course">
                         <center>
-                            <label for="course">Choose course: </label>
+                            <label for="course">Choose course </label>
                             <select name="Fcourse" id="course" required>
                                 <option hidden disabled selected value>-- select an option --</option>
                                 <option value="BSIT">BSIT</option>
@@ -241,8 +265,8 @@
                 </div>
 
                 <div class="gender-details">
-                    <input type="radio" name="Fgender" id="dot-1" value="male">
-                    <input type="radio" name="Fgender" id="dot-2" value="female">
+                    <input type="radio" name="Fgender" id="dot-1" value="Male">
+                    <input type="radio" name="Fgender" id="dot-2" value="Female">
                     <span class="gender-title">Gender</span>
                     <div class="category">
 
@@ -314,26 +338,15 @@
                         <input type="text" name="Y24add" placeholder="Enter your address" required>
                     </div>
 
-                </div>
-
-                <div class="gender-details">
-                    <input type="radio" name="Y24gender" id="dot2-1">
-                    <input type="radio" name="Y24gender" id="dot2-2">
-                    <span class="gender-title">Gender</span>
-                    <div class="category">
-
-                        <label for="dot2-1">
-                            <span class="dot one"></span>
-                            <span class="gender">Male</span>
-                        </label>
-
-                        <label for="dot2-2">
-                            <span class="dot two"></span>
-                            <span class="gender">Female</span>
-                        </label>
-
+                    <div class="sNum">
+                        <center>
+                            <span class="details">Student Number</span>
+                            <input type="text" name="sNum" placeholder="Enter your student number" required>
+                        </center>
                     </div>
+
                 </div>
+                
 
                 <div class="files">
                     <center>
@@ -385,11 +398,23 @@
                         <input type="text" name="Tadd" placeholder="Enter your address" required>
                     </div>
 
+                    <div class="course">
+                        <center>
+                            <label for="course">Choose course </label>
+                            <select name="Tcourse" id="course" required>
+                                <option hidden disabled selected value>-- select an option --</option>
+                                <option value="BSIT">BSIT</option>
+                                <option value="BSIT">BSCPE</option>
+                                <option value="BSIT">BSED</option>
+                            </select>
+                        </center>
+                    </div>
+
                 </div>
 
                 <div class="gender-details">
-                    <input type="radio" name="Tgender" id="dot3-1">
-                    <input type="radio" name="Tgender" id="dot3-2">
+                    <input type="radio" name="Tgender" id="dot3-1" value="Male">
+                    <input type="radio" name="Tgender" id="dot3-2" value="Female">
                     <span class="gender-title">Gender</span>
                     <div class="category">
 

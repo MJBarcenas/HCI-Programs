@@ -26,3 +26,31 @@ D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Pro
 D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Registration\Registration\obj\Debug\net6.0-windows\ref\Registration.dll
 D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Registration\Registration\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Word.dll
 D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\Registration\Registration\bin\Debug\net6.0-windows\OFFICE.DLL
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\Registration.exe
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\Registration.deps.json
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\Registration.runtimeconfig.json
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\Registration.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\Registration.pdb
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Word.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\bin\Debug\net6.0-windows\OFFICE.DLL
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.vbproj.AssemblyReference.cache
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.Form1.resources
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.vbproj.GenerateResource.cache
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.AssemblyInfoInputs.cache
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.AssemblyInfo.vb
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.vbproj.CoreCompileInputs.cache
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.vbproj.CopyComplete
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\refint\Registration.dll
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.pdb
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.genruntimeconfig.cache
+C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\ref\Registration.dll

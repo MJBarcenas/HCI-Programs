@@ -2,14 +2,14 @@
 Module Functions
     Public Function getStudentCount() As Integer
         Dim currCount As Integer
-        Using Stream As StreamReader = New StreamReader("D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\studentNum.txt")
+        Using Stream As StreamReader = New StreamReader("D:\Programming\Programs\studentNum.txt")
             currCount = CInt(Stream.ReadLine())
         End Using
         Return currCount
     End Function
 
     Public Sub updateStudentCount(ByVal count As Integer)
-        Using Stream As StreamWriter = New StreamWriter("D:\School\3rd Year - Second Semester [3I]\Human Computer Interaction\Project\Programs\onSiteEnrollment\onSiteEnrollment\studentNum.txt")
+        Using Stream As StreamWriter = New StreamWriter("D:\Programming\Programs\studentNum.txt")
             Stream.WriteLine(CStr(count))
         End Using
     End Sub
@@ -24,7 +24,7 @@ Module Functions
         Dim num As String = "1234567890"
         Dim password As String = ""
 
-        For i As Integer = 0 To 8
+        For i As Integer = 0 To 7
             Dim n As Integer = GetRandom(0, 2)
             If n Mod 2 = 0 Then
                 Dim index = GetRandom(0, num.Length())
@@ -38,4 +38,20 @@ Module Functions
         Return password
 
     End Function
+
+    Public Function getFile(ByVal type As String) As String
+        Dim file As New OpenFileDialog
+        file.Multiselect = False
+        file.RestoreDirectory = True
+        file.Filter = type
+        If file.ShowDialog() <> Windows.Forms.DialogResult.Cancel Then
+            Dim path As String = file.FileName
+            file.FileName = ""
+            Return path
+        End If
+    End Function
+
+    Public Sub saveFile(ByVal sourcePath As String, ByVal toPath As String)
+        System.IO.File.Copy(sourcePath, toPath)
+    End Sub
 End Module

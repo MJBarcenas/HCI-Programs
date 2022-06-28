@@ -123,6 +123,7 @@ body {
     float: left;
     margin: 14px;
     align-self: center;
+    overflow: auto;
 }
 
 .reqI .title {
