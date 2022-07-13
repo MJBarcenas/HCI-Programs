@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wuHQYxvF4UV9WDTaGzDEJsa+nExjs9HmE5pqrHWb9K2de7+MBU+KUSCs2oJg4Va8Xe1JweAJprzUmg6NqGcUIA==",
+  "dgSpecHash": "7ramDLTXWPGWWx1blrixykA4EhLDuTCG8XXbwIVCFCXbArk9glF/cgvSi0WwqGRE1sxZ2eMtBwCGoPRE9qqLjA==",
   "success": true,
   "projectFilePath": "D:\\Programming\\Programs\\onSiteEnrollment\\onSiteEnrollment\\onSiteEnrollment.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\van_\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
+    "C:\\Users\\van_\\.nuget\\packages\\fontawesome.sharp\\6.1.1\\fontawesome.sharp.6.1.1.nupkg.sha512",
     "C:\\Users\\van_\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\van_\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\van_\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",

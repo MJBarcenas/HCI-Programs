@@ -102,3 +102,4 @@ D:\Programming\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windo
 D:\Programming\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.pdb
 D:\Programming\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\onSiteEnrollment.genruntimeconfig.cache
 D:\Programming\Programs\onSiteEnrollment\onSiteEnrollment\obj\Debug\net6.0-windows\ref\onSiteEnrollment.dll
+D:\Programming\Programs\onSiteEnrollment\onSiteEnrollment\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll

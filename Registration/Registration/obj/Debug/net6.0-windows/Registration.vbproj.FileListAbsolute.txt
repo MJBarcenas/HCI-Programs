@@ -54,3 +54,31 @@ C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.
 C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.pdb
 C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.genruntimeconfig.cache
 C:\Program Files\xampp\htdocs\Programs\Registration\Registration\obj\Debug\net6.0-windows\ref\Registration.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\Registration.exe
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\Registration.deps.json
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\Registration.runtimeconfig.json
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\Registration.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\Registration.pdb
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Word.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\ZstdNet.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\OFFICE.DLL
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.vbproj.AssemblyReference.cache
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.Form1.resources
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.vbproj.GenerateResource.cache
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.AssemblyInfoInputs.cache
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.AssemblyInfo.vb
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.vbproj.CoreCompileInputs.cache
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.vbproj.CopyComplete
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.dll
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\refint\Registration.dll
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.pdb
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.genruntimeconfig.cache
+D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\ref\Registration.dll

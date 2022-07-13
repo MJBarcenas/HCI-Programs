@@ -33,7 +33,7 @@
 - Transferees are now able to choose year and course.
 - Added a safeguard check for user-inputs by using trim() fucntion to remove whitespaces.
 - Can now select a gender for Freshmen and Transferee.
-- Can now remove directories that are already exist.
+- Can now remove directories that already exist.
 
 [VB.net]
 - File upload are now responsive.

@@ -1,5 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.IO
+Imports System.Runtime.InteropServices
+
 Public Class Form1
     Dim str As String = "server=localhost; uid=root; pwd=; database=onlineenrollment"
     Dim con As New MySqlConnection(str)
@@ -56,6 +58,9 @@ Public Class Form1
         clear()
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        'Check if the user is already in enrolled.txt
+
         If MI.Text.ToUpper = "NONE" Then
             If ifEnrolled($"{Trim(FName.Text)} {Trim(LName.Text)}") Then
                 MsgBox("You have already enrolled!")
@@ -67,7 +72,9 @@ Public Class Form1
                 Return
             End If
         End If
+
         'Check for empty fields on the code
+
         Dim emptyTextBoxes =
             From txt In Me.Controls.OfType(Of TextBox)()
             Where txt.Text.Length = 0 And txt.Visible And txt.Enabled
@@ -87,6 +94,7 @@ Public Class Form1
         End If
 
         'Get confirmation from the user
+
         Dim confirm As MsgBoxResult = MsgBox("Are you sure about all the information you provided?" & Environment.NewLine & "If so, please check all informations and click [yes]", MsgBoxStyle.YesNo)
         If confirm = MsgBoxResult.Yes Then
 
@@ -94,7 +102,9 @@ Public Class Form1
                 Dim path As String
                 Dim toDelete As String
                 Dim possible() As String = {"2nd-4th Year", "Freshmen", "Transferee"}
+
                 'Check for the middlename if it's blank or not and delete folders and create folder base on it
+
                 If MI.Text.ToUpper = "NONE" Then
                     For i As Integer = 0 To possible.Length - 1
                         toDelete = $"D:\Programming\Programs\uploads\{possible(i)}\{Trim(LName.Text)}, {Trim(FName.Text)}"
@@ -112,7 +122,9 @@ Public Class Form1
                     Next
                     path = System.IO.Directory.CreateDirectory($"D:\Programming\Programs\uploads\{Trim(ComboBox2.Text)}\{Trim(LName.Text)}, {Trim(FName.Text)}-{Trim(MI.Text)}").ToString()
                 End If
+
                 'Check for the type of enrollment
+
                 If ComboBox2.Text = "2nd-4th Year" Then
                     'Saving the uploaded files on the created folder
                     For i As Integer = 0 To Y24Files.Length - 1
@@ -135,8 +147,12 @@ Public Class Form1
                         saveFile(freshFiles(i), $"{path}\[{freshFilesNames(i)}] {file}")
                     Next
                 End If
+
                 con.Open()
                 Dim adapter As MySqlDataAdapter
+
+                'Creating an adapter 
+
                 If MI.Text.ToUpper = "NONE" Then
                     adapter = New MySqlDataAdapter($"select * from students where firstname='{Trim(FName.Text)}' and lastname='{Trim(LName.Text)}'", con)
                 Else
@@ -149,34 +165,23 @@ Public Class Form1
                 cmd = con.CreateCommand()
                 adapter.Fill(ds)
 
+                'Check the type of user and perform actions based on it
+
                 If ComboBox2.Text = "Freshmen" Then
-                    If ds.Tables(0).Rows.Count >= 1 Then
-                        MsgBox("You already submitted a requirements!")
-                        con.Close()
-                        Return
-                    Else
-                        cmd.CommandText = $"insert into students(studentnum, firstname, lastname, middlename, address, email, number, year, accpass, course, gender) values(@studentnum, @firstname, @lastname, @middlename, @address, @email, @number, '1', @accpass, @course, '{Trim(ComboBox4.Text)}')"
-                        cmd.Parameters.AddWithValue("@course", ComboBox1.SelectedItem.ToString())
-                    End If
+                    cmd.CommandText = $"insert into students(studentnum, firstname, lastname, middlename, address, email, number, year, accpass, course, gender) values(@studentnum, @firstname, @lastname, @middlename, @address, @email, @number, '1', @accpass, @course, '{Trim(ComboBox4.Text)}')"
+                    cmd.Parameters.AddWithValue("@course", ComboBox1.SelectedItem.ToString())
+
                 ElseIf ComboBox2.Text = "2nd-4th Year" Then
-                    If ds.Tables(0).Rows.Count = 0 Then
-                        MsgBox("You are not enrolled as a student in Colegion de Montalban")
-                        con.Close()
-                        Return
-                    Else
-                        Syear = Integer.Parse(ds.Tables(0).Rows(0)(9).ToString()) + 1
-                        cmd.CommandText = $"update students set studentnum=@studentnum, firstname=@firstname, lastname=@lastname, middlename=@middlename, address=@address, email=@email, number=@number, ispaid=False, year={Syear.ToString()}, section='', accpass=@accpass where studentnum='{Trim(TextBox1.Text)}';"
-                    End If
+                    Syear = Integer.Parse(ds.Tables(0).Rows(0)(9).ToString()) + 1
+                    cmd.CommandText = $"update students set studentnum=@studentnum, firstname=@firstname, lastname=@lastname, middlename=@middlename, address=@address, email=@email, number=@number, ispaid=False, year={Syear.ToString()}, section='', accpass=@accpass where studentnum='{Trim(TextBox1.Text)}';"
+
                 ElseIf ComboBox2.Text = "Transferee" Then
-                    If ds.Tables(0).Rows.Count >= 1 Then
-                        MsgBox("You already submitted a requirements!")
-                        con.Close()
-                        Return
-                    Else
-                        cmd.CommandText = $"insert into students(studentnum, firstname, lastname, middlename, address, email, number, year, accpass, course, gender) values(@studentnum, @firstname, @lastname, @middlename, @address, @email, @number, '{ComboBox3.Text.Substring(0, 1)}', @accpass, @course, '{Trim(ComboBox4.Text)}')"
-                        cmd.Parameters.AddWithValue("@course", ComboBox1.SelectedItem.ToString())
-                    End If
+                    cmd.CommandText = $"insert into students(studentnum, firstname, lastname, middlename, address, email, number, year, accpass, course, gender) values(@studentnum, @firstname, @lastname, @middlename, @address, @email, @number, '{ComboBox3.Text.Substring(0, 1)}', @accpass, @course, '{Trim(ComboBox4.Text)}')"
+                    cmd.Parameters.AddWithValue("@course", ComboBox1.SelectedItem.ToString())
+
                 End If
+
+                'Get the current student count, and update it. We will also use it for the creation of student number
 
                 Dim studentCount As Integer = getStudentCount() + 1
                 updateStudentCount(studentCount)
@@ -184,6 +189,9 @@ Public Class Form1
                 Dim year = Date.Today.Year()
                 Dim zeros As Integer = 5 - CStr(getStudentCount()).Length
                 Dim zeroStr As String = StrDup(zeros, "0")
+
+                'Student number = {last 2 digit of year}-{zeros depending on the length of current student count}{student count}
+
                 Dim studentNum As String = CStr(year).Substring(2) & "-" & zeroStr & studentCount.ToString()
 
                 Dim password = getRandomPassword()
@@ -191,6 +199,9 @@ Public Class Form1
                 cmd.Parameters.AddWithValue("@studentnum", studentNum)
                 cmd.Parameters.AddWithValue("@firstname", Trim(FName.Text))
                 cmd.Parameters.AddWithValue("@lastname", Trim(LName.Text))
+
+                'Adding value to sql code depends on what the middle name of the user
+
                 If MI.Text.ToUpper = "NONE" Then
                     cmd.Parameters.AddWithValue("@middlename", "")
                 Else
@@ -201,9 +212,14 @@ Public Class Form1
                 cmd.Parameters.AddWithValue("@number", Trim(Number.Text))
                 cmd.Parameters.AddWithValue("@accpass", password)
 
+                'Execute the Query
+
                 cmd.ExecuteNonQuery()
                 con.Close()
                 MsgBox("Submition Success!")
+
+                'Updating the enrolled student to be checked later
+
                 If MI.Text.ToUpper = "NONE" Then
                     updateEnrolled($"{Trim(FName.Text)} {Trim(LName.Text)}")
                 Else
@@ -238,6 +254,9 @@ Public Class Form1
 
     Private Sub ComboBox2_TextChanged(sender As Object, e As EventArgs) Handles ComboBox2.TextChanged
         enableAll(True)
+
+        'Disabling visible and enabled buttons based on what will the user enrolled as
+
         If ComboBox2.Text = "2nd-4th Year" Then
             TextBox1.Visible = True
             Label9.Visible = True
@@ -279,6 +298,8 @@ Public Class Form1
 
     End Sub
 
+    'Getting required files from the user
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button9.Click, Button8.Click, Button6.Click, Button5.Click, Button4.Click, Button3.Click, Button13.Click, Button12.Click, Button10.Click
         If sender Is Button3 Then
             transFiles(1) = getFile(sender, "PDF|*.pdf")
@@ -313,7 +334,79 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
-        MsgBox(ifEnrolled("Michael Justin Barcenas"))
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        Dim adapter As MySqlDataAdapter
+        Dim ds As New DataSet
+        If TextBox1.Focused Then
+            Try
+                con.Open()
+                adapter = New MySqlDataAdapter($"select studentnum from students where studentnum like '%{TextBox1.Text}%'", con)
+                adapter.Fill(ds)
+                Dim s = ds.Tables(0).Rows(0)(0).ToString()
+                If s.Length > 0 Then
+                    'Change this, there can be enrollees which are incoming 2nd-4th year but are not transferee or from the same school
+                    enableAll(True)
+                    ComboBox1.Enabled = False
+                End If
+            Catch ex As Exception
+                enableAll(False)
+            Finally
+                con.Close()
+
+            End Try
+        End If
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        roundCorners(Me)
+
+        Dim buttons =
+            From button In Me.Controls.OfType(Of Button)()
+            Where Not (button Is IconButton1 Or button Is IconButton2 Or button Is IconButton3)
+            Select button
+
+        For i As Integer = 0 To buttons.Count
+            If buttons(i) IsNot Nothing Then
+                RoundButton(buttons(i))
+            End If
+        Next
+
+    End Sub
+
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Private Shared Sub ReleaseCapture()
+    End Sub
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
+    End Sub
+
+    Private Sub Button1_MouseHover(sender As Object, e As EventArgs) Handles Button1.MouseHover
+        If Button1.Enabled Then
+            Button1.BackColor = Color.Orange
+        End If
+    End Sub
+
+    Private Sub Button1_MouseLeave(sender As Object, e As EventArgs) Handles Button1.MouseLeave
+        If Button1.Enabled Then
+            Button1.BackColor = Color.DodgerBlue
+        End If
+    End Sub
+
+    Private Sub Form1_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+    Private Sub IconButton3_MouseHover(sender As Object, e As EventArgs) Handles IconButton3.MouseHover
+        IconButton3.BackColor = Color.Red
+    End Sub
+
+    Private Sub IconButton1_MouseHover(sender As Object, e As EventArgs) Handles IconButton1.MouseHover
+        IconButton1.BackColor = Color.Gray
+    End Sub
+
+    Private Sub IconButton3_MouseLeave(sender As Object, e As EventArgs) Handles IconButton3.MouseLeave, IconButton1.MouseLeave
+        sender.BackColor = Color.White
     End Sub
 End Class

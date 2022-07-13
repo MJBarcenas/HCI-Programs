@@ -880,11 +880,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files\\xampp\\htdocs\\Programs\\Registration\\Registration\\Registration.vbproj",
+      "projectUniqueName": "D:\\Programming\\Programs\\Registration\\Registration\\Registration.vbproj",
       "projectName": "Registration",
-      "projectPath": "C:\\Program Files\\xampp\\htdocs\\Programs\\Registration\\Registration\\Registration.vbproj",
+      "projectPath": "D:\\Programming\\Programs\\Registration\\Registration\\Registration.vbproj",
       "packagesPath": "C:\\Users\\van_\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files\\xampp\\htdocs\\Programs\\Registration\\Registration\\obj\\",
+      "outputPath": "D:\\Programming\\Programs\\Registration\\Registration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\van_\\AppData\\Roaming\\NuGet\\NuGet.Config",
