@@ -37,3 +37,9 @@
 
 [VB.net]
 - File upload are now responsive.
+
+## *As of July 13, 2022*
+
+[VB.net]
+- Added a flat design for onlineEnrollment.
+- Will do the same for other forms later.
