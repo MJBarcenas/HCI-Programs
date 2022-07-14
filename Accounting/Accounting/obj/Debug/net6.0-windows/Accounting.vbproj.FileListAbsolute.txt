@@ -128,3 +128,4 @@ D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\refint\Ac
 D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.pdb
 D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\Accounting.genruntimeconfig.cache
 D:\Programming\Programs\Accounting\Accounting\obj\Debug\net6.0-windows\ref\Accounting.dll
+D:\Programming\Programs\Accounting\Accounting\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll

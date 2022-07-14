@@ -358,22 +358,6 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        roundCorners(Me)
-
-        Dim buttons =
-            From button In Me.Controls.OfType(Of Button)()
-            Where Not (button Is IconButton1 Or button Is IconButton2 Or button Is IconButton3)
-            Select button
-
-        For i As Integer = 0 To buttons.Count
-            If buttons(i) IsNot Nothing Then
-                RoundButton(buttons(i))
-            End If
-        Next
-
-    End Sub
-
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
     End Sub
@@ -393,20 +377,28 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Form1_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
+    Private Sub Form1_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown, Label12.MouseDown, Panel1.MouseDown
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub IconButton3_MouseHover(sender As Object, e As EventArgs) Handles IconButton3.MouseHover
-        IconButton3.BackColor = Color.Red
+    Private Sub IconButton3_Click(sender As Object, e As EventArgs) Handles IconButton3.Click
+        Application.Exit()
     End Sub
 
-    Private Sub IconButton1_MouseHover(sender As Object, e As EventArgs) Handles IconButton1.MouseHover
-        IconButton1.BackColor = Color.Gray
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
+        WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub IconButton3_MouseHover(sender As Object, e As EventArgs) Handles IconButton3.MouseHover, IconButton1.MouseHover
+        If sender Is IconButton1 Then
+            sender.IconColor = Color.Gray
+        Else
+            sender.IconColor = Color.Red
+        End If
     End Sub
 
     Private Sub IconButton3_MouseLeave(sender As Object, e As EventArgs) Handles IconButton3.MouseLeave, IconButton1.MouseLeave
-        sender.BackColor = Color.White
+        sender.IconColor = Color.White
     End Sub
 End Class

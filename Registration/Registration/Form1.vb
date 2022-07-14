@@ -36,6 +36,8 @@ Public Class Form1
         loadData()
         TextBox1.ReadOnly() = True
         TextBox4.ReadOnly() = True
+
+        Me.FormBorderStyle = FormBorderStyle.None
     End Sub
 
     Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
@@ -190,8 +192,36 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Private Shared Sub ReleaseCapture()
+    End Sub
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
+    End Sub
 
+    Private Sub Form1_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown, Panel1.MouseDown, Label2.MouseDown
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
 
+    Private Sub IconButton3_Click(sender As Object, e As EventArgs) Handles IconButton3.Click
+        System.Windows.Forms.Application.Exit()
+    End Sub
+
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
+        WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub IconButton3_MouseHover(sender As Object, e As EventArgs) Handles IconButton3.MouseHover, IconButton1.MouseHover
+        If sender Is IconButton1 Then
+            sender.IconColor = Color.Gray
+        Else
+            sender.IconColor = Color.Red
+        End If
+
+    End Sub
+
+    Private Sub IconButton3_MouseLeave(sender As Object, e As EventArgs) Handles IconButton3.MouseLeave, IconButton1.MouseLeave
+        sender.IconColor = Color.White
     End Sub
 End Class

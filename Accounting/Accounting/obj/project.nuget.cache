@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vPs24omF5KvT0qGws1/0NCw9ty6nG+E4tAoD6U+U6Jpbk9+4kaojB2MGCycQcp549MoXj2wnMkhl+rg2Gy0TUw==",
+  "dgSpecHash": "ATmR7s088itXmwPzvXcgVpnuBLaeOcrDE8K0e3TOE/rz8aD/FL3j7bzqgujc+02zxVt7GsWII9BN1d8DO41c9g==",
   "success": true,
   "projectFilePath": "D:\\Programming\\Programs\\Accounting\\Accounting\\Accounting.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\van_\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
+    "C:\\Users\\van_\\.nuget\\packages\\fontawesome.sharp\\6.1.1\\fontawesome.sharp.6.1.1.nupkg.sha512",
     "C:\\Users\\van_\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\van_\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\van_\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",

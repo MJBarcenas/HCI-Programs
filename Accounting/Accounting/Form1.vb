@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Runtime.InteropServices
+Imports MySql.Data.MySqlClient
 Public Class Form1
 
     Dim str As String = "server=localhost; uid=root; pwd=; database=onlineenrollment"
@@ -20,6 +21,19 @@ Public Class Form1
         CheckBox1.Checked() = False
         CheckBox2.Checked() = False
     End Sub
+
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Private Shared Sub ReleaseCapture()
+    End Sub
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
+    End Sub
+
+    Private Sub Form1_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown, Label5.MouseDown, Panel1.MouseDown
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         loadData()
     End Sub
@@ -123,5 +137,25 @@ Public Class Form1
             MsgBox(ex.Message)
         End Try
         con.Close()
+    End Sub
+
+    Private Sub IconButton3_Click(sender As Object, e As EventArgs) Handles IconButton3.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
+        WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub IconButton1_MouseHover(sender As Object, e As EventArgs) Handles IconButton1.MouseHover, IconButton3.MouseHover
+        If sender Is IconButton1 Then
+            sender.IconColor = Color.Gray
+        Else
+            sender.IconColor = Color.Red
+        End If
+    End Sub
+
+    Private Sub IconButton3_MouseLeave(sender As Object, e As EventArgs) Handles IconButton3.MouseLeave, IconButton1.MouseLeave
+        sender.IconColor = Color.White
     End Sub
 End Class

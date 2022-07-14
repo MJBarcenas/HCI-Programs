@@ -82,3 +82,4 @@ D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\refin
 D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.pdb
 D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\Registration.genruntimeconfig.cache
 D:\Programming\Programs\Registration\Registration\obj\Debug\net6.0-windows\ref\Registration.dll
+D:\Programming\Programs\Registration\Registration\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll

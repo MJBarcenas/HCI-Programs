@@ -59,13 +59,16 @@ Partial Class Form1
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.IconButton3 = New FontAwesome.Sharp.IconButton()
         Me.IconButton2 = New FontAwesome.Sharp.IconButton()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(229, 219)
+        Me.Label1.Location = New System.Drawing.Point(208, 221)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(139, 40)
         Me.Label1.TabIndex = 0
@@ -75,7 +78,7 @@ Partial Class Form1
         '
         Me.LName.Enabled = False
         Me.LName.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.LName.Location = New System.Drawing.Point(38, 260)
+        Me.LName.Location = New System.Drawing.Point(17, 262)
         Me.LName.Name = "LName"
         Me.LName.PlaceholderText = "Dela Cruz"
         Me.LName.Size = New System.Drawing.Size(573, 42)
@@ -88,7 +91,7 @@ Partial Class Form1
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(1356, 518)
+        Me.Button1.Location = New System.Drawing.Point(1335, 520)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(195, 69)
         Me.Button1.TabIndex = 2
@@ -99,7 +102,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(41, 335)
+        Me.Label2.Location = New System.Drawing.Point(12, 338)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(116, 40)
         Me.Label2.TabIndex = 0
@@ -109,16 +112,16 @@ Partial Class Form1
         '
         Me.Address.Enabled = False
         Me.Address.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Address.Location = New System.Drawing.Point(206, 332)
+        Me.Address.Location = New System.Drawing.Point(169, 334)
         Me.Address.Name = "Address"
-        Me.Address.Size = New System.Drawing.Size(1345, 42)
+        Me.Address.Size = New System.Drawing.Size(1356, 42)
         Me.Address.TabIndex = 1
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(41, 416)
+        Me.Label3.Location = New System.Drawing.Point(12, 419)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(95, 40)
         Me.Label3.TabIndex = 0
@@ -128,17 +131,17 @@ Partial Class Form1
         '
         Me.Email.Enabled = False
         Me.Email.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Email.Location = New System.Drawing.Point(206, 413)
+        Me.Email.Location = New System.Drawing.Point(169, 415)
         Me.Email.Name = "Email"
         Me.Email.PlaceholderText = "user@gmail.com"
-        Me.Email.Size = New System.Drawing.Size(514, 42)
+        Me.Email.Size = New System.Drawing.Size(530, 42)
         Me.Email.TabIndex = 1
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(786, 416)
+        Me.Label4.Location = New System.Drawing.Point(765, 418)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(116, 40)
         Me.Label4.TabIndex = 0
@@ -148,17 +151,17 @@ Partial Class Form1
         '
         Me.Number.Enabled = False
         Me.Number.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Number.Location = New System.Drawing.Point(922, 413)
+        Me.Number.Location = New System.Drawing.Point(901, 415)
         Me.Number.Name = "Number"
         Me.Number.PlaceholderText = "09xxxxxxxxx"
-        Me.Number.Size = New System.Drawing.Size(629, 42)
+        Me.Number.Size = New System.Drawing.Size(624, 42)
         Me.Number.TabIndex = 1
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(797, 219)
+        Me.Label5.Location = New System.Drawing.Point(776, 221)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(140, 40)
         Me.Label5.TabIndex = 0
@@ -168,7 +171,7 @@ Partial Class Form1
         '
         Me.FName.Enabled = False
         Me.FName.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.FName.Location = New System.Drawing.Point(617, 260)
+        Me.FName.Location = New System.Drawing.Point(596, 262)
         Me.FName.Name = "FName"
         Me.FName.PlaceholderText = "Juan"
         Me.FName.Size = New System.Drawing.Size(573, 42)
@@ -178,7 +181,7 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(1299, 219)
+        Me.Label6.Location = New System.Drawing.Point(1278, 221)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(171, 40)
         Me.Label6.TabIndex = 0
@@ -188,10 +191,10 @@ Partial Class Form1
         '
         Me.MI.Enabled = False
         Me.MI.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.MI.Location = New System.Drawing.Point(1196, 260)
+        Me.MI.Location = New System.Drawing.Point(1175, 262)
         Me.MI.Name = "MI"
         Me.MI.PlaceholderText = "Binay or NONE"
-        Me.MI.Size = New System.Drawing.Size(355, 42)
+        Me.MI.Size = New System.Drawing.Size(350, 42)
         Me.MI.TabIndex = 1
         '
         'ComboBox1
@@ -200,16 +203,16 @@ Partial Class Form1
         Me.ComboBox1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"BSIT", "BSCPE", "BSED"})
-        Me.ComboBox1.Location = New System.Drawing.Point(206, 128)
+        Me.ComboBox1.Location = New System.Drawing.Point(169, 130)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(405, 48)
+        Me.ComboBox1.Size = New System.Drawing.Size(421, 48)
         Me.ComboBox1.TabIndex = 3
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(36, 135)
+        Me.Label7.Location = New System.Drawing.Point(7, 138)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(105, 40)
         Me.Label7.TabIndex = 0
@@ -219,7 +222,7 @@ Partial Class Form1
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(36, 80)
+        Me.Label8.Location = New System.Drawing.Point(7, 83)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(119, 40)
         Me.Label8.TabIndex = 0
@@ -230,16 +233,16 @@ Partial Class Form1
         Me.ComboBox2.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Freshmen", "2nd-4th Year", "Transferee"})
-        Me.ComboBox2.Location = New System.Drawing.Point(206, 77)
+        Me.ComboBox2.Location = New System.Drawing.Point(169, 79)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(405, 48)
+        Me.ComboBox2.Size = New System.Drawing.Size(421, 48)
         Me.ComboBox2.TabIndex = 3
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.Location = New System.Drawing.Point(971, 79)
+        Me.Label9.Location = New System.Drawing.Point(950, 81)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(151, 40)
         Me.Label9.TabIndex = 0
@@ -249,10 +252,10 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox1.Location = New System.Drawing.Point(1141, 79)
+        Me.TextBox1.Location = New System.Drawing.Point(1120, 81)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PlaceholderText = "00-00000"
-        Me.TextBox1.Size = New System.Drawing.Size(405, 42)
+        Me.TextBox1.Size = New System.Drawing.Size(400, 42)
         Me.TextBox1.TabIndex = 1
         Me.TextBox1.Visible = False
         '
@@ -260,7 +263,7 @@ Partial Class Form1
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.Location = New System.Drawing.Point(971, 80)
+        Me.Label10.Location = New System.Drawing.Point(950, 82)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(74, 40)
         Me.Label10.TabIndex = 0
@@ -272,9 +275,9 @@ Partial Class Form1
         Me.ComboBox3.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"1st", "2nd", "3rd", "4th"})
-        Me.ComboBox3.Location = New System.Drawing.Point(1141, 77)
+        Me.ComboBox3.Location = New System.Drawing.Point(1120, 79)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(405, 48)
+        Me.ComboBox3.Size = New System.Drawing.Size(400, 48)
         Me.ComboBox3.TabIndex = 3
         Me.ComboBox3.Visible = False
         '
@@ -284,7 +287,7 @@ Partial Class Form1
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(28, 529)
+        Me.Button2.Location = New System.Drawing.Point(7, 531)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(156, 58)
         Me.Button2.TabIndex = 2
@@ -298,7 +301,7 @@ Partial Class Form1
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(190, 529)
+        Me.Button3.Location = New System.Drawing.Point(169, 531)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(156, 58)
         Me.Button3.TabIndex = 2
@@ -312,7 +315,7 @@ Partial Class Form1
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(352, 529)
+        Me.Button4.Location = New System.Drawing.Point(331, 531)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(156, 58)
         Me.Button4.TabIndex = 2
@@ -326,7 +329,7 @@ Partial Class Form1
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(514, 529)
+        Me.Button5.Location = New System.Drawing.Point(493, 531)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(156, 58)
         Me.Button5.TabIndex = 2
@@ -340,7 +343,7 @@ Partial Class Form1
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(676, 529)
+        Me.Button6.Location = New System.Drawing.Point(655, 531)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(156, 58)
         Me.Button6.TabIndex = 2
@@ -354,7 +357,7 @@ Partial Class Form1
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(28, 529)
+        Me.Button7.Location = New System.Drawing.Point(7, 531)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(156, 58)
         Me.Button7.TabIndex = 2
@@ -368,7 +371,7 @@ Partial Class Form1
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button8.ForeColor = System.Drawing.Color.White
-        Me.Button8.Location = New System.Drawing.Point(190, 529)
+        Me.Button8.Location = New System.Drawing.Point(169, 531)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(156, 58)
         Me.Button8.TabIndex = 2
@@ -382,7 +385,7 @@ Partial Class Form1
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button9.ForeColor = System.Drawing.Color.White
-        Me.Button9.Location = New System.Drawing.Point(352, 529)
+        Me.Button9.Location = New System.Drawing.Point(331, 531)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(156, 58)
         Me.Button9.TabIndex = 2
@@ -396,7 +399,7 @@ Partial Class Form1
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button10.ForeColor = System.Drawing.Color.White
-        Me.Button10.Location = New System.Drawing.Point(514, 529)
+        Me.Button10.Location = New System.Drawing.Point(493, 531)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(156, 58)
         Me.Button10.TabIndex = 2
@@ -410,7 +413,7 @@ Partial Class Form1
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button12.ForeColor = System.Drawing.Color.White
-        Me.Button12.Location = New System.Drawing.Point(28, 529)
+        Me.Button12.Location = New System.Drawing.Point(7, 531)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(156, 58)
         Me.Button12.TabIndex = 2
@@ -424,7 +427,7 @@ Partial Class Form1
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button13.Font = New System.Drawing.Font("Poppins", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button13.ForeColor = System.Drawing.Color.White
-        Me.Button13.Location = New System.Drawing.Point(190, 529)
+        Me.Button13.Location = New System.Drawing.Point(169, 531)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(156, 58)
         Me.Button13.TabIndex = 2
@@ -436,7 +439,7 @@ Partial Class Form1
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.Location = New System.Drawing.Point(971, 139)
+        Me.Label11.Location = New System.Drawing.Point(950, 141)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(108, 40)
         Me.Label11.TabIndex = 0
@@ -448,22 +451,22 @@ Partial Class Form1
         Me.ComboBox4.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Items.AddRange(New Object() {"Male", "Female"})
-        Me.ComboBox4.Location = New System.Drawing.Point(1141, 132)
+        Me.ComboBox4.Location = New System.Drawing.Point(1120, 134)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(405, 48)
+        Me.ComboBox4.Size = New System.Drawing.Size(400, 48)
         Me.ComboBox4.TabIndex = 3
         Me.ComboBox4.Visible = False
         '
         'IconButton1
         '
-        Me.IconButton1.BackColor = System.Drawing.Color.White
+        Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton1.FlatAppearance.BorderSize = 0
         Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
-        Me.IconButton1.IconColor = System.Drawing.Color.Black
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Minus
+        Me.IconButton1.IconColor = System.Drawing.Color.White
         Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton1.IconSize = 20
-        Me.IconButton1.Location = New System.Drawing.Point(1460, 12)
+        Me.IconButton1.Location = New System.Drawing.Point(1458, 15)
         Me.IconButton1.Name = "IconButton1"
         Me.IconButton1.Size = New System.Drawing.Size(30, 28)
         Me.IconButton1.TabIndex = 4
@@ -471,14 +474,14 @@ Partial Class Form1
         '
         'IconButton3
         '
-        Me.IconButton3.BackColor = System.Drawing.Color.White
+        Me.IconButton3.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton3.FlatAppearance.BorderSize = 0
         Me.IconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.IconButton3.IconChar = FontAwesome.Sharp.IconChar.Multiply
-        Me.IconButton3.IconColor = System.Drawing.Color.Black
+        Me.IconButton3.IconColor = System.Drawing.Color.White
         Me.IconButton3.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton3.IconSize = 20
-        Me.IconButton3.Location = New System.Drawing.Point(1532, 12)
+        Me.IconButton3.Location = New System.Drawing.Point(1530, 15)
         Me.IconButton3.Name = "IconButton3"
         Me.IconButton3.Size = New System.Drawing.Size(30, 28)
         Me.IconButton3.TabIndex = 4
@@ -486,29 +489,52 @@ Partial Class Form1
         '
         'IconButton2
         '
-        Me.IconButton2.BackColor = System.Drawing.Color.White
+        Me.IconButton2.BackColor = System.Drawing.Color.DodgerBlue
         Me.IconButton2.Enabled = False
         Me.IconButton2.FlatAppearance.BorderSize = 0
         Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Square
-        Me.IconButton2.IconColor = System.Drawing.Color.Black
+        Me.IconButton2.IconColor = System.Drawing.Color.White
         Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton2.IconSize = 20
-        Me.IconButton2.Location = New System.Drawing.Point(1496, 12)
+        Me.IconButton2.Location = New System.Drawing.Point(1494, 15)
         Me.IconButton2.Name = "IconButton2"
         Me.IconButton2.Size = New System.Drawing.Size(30, 28)
         Me.IconButton2.TabIndex = 4
         Me.IconButton2.UseVisualStyleBackColor = False
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label12.Font = New System.Drawing.Font("Poppins", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(752, 17)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(54, 26)
+        Me.Label12.TabIndex = 5
+        Me.Label12.Text = "Enroll"
+        '
+        'Panel1
+        '
+        Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Panel1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Panel1.Controls.Add(Me.Label12)
+        Me.Panel1.Controls.Add(Me.IconButton3)
+        Me.Panel1.Controls.Add(Me.IconButton2)
+        Me.Panel1.Controls.Add(Me.IconButton1)
+        Me.Panel1.Location = New System.Drawing.Point(-32, -8)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1594, 50)
+        Me.Panel1.TabIndex = 6
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1574, 603)
-        Me.Controls.Add(Me.IconButton3)
-        Me.Controls.Add(Me.IconButton2)
-        Me.Controls.Add(Me.IconButton1)
+        Me.ClientSize = New System.Drawing.Size(1535, 594)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.ComboBox4)
@@ -543,8 +569,11 @@ Partial Class Form1
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.LName)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
         Me.Text = " "
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -588,4 +617,6 @@ Partial Class Form1
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton3 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Panel1 As Panel
 End Class
