@@ -43,3 +43,7 @@
 [VB.net]
 - Added a flat design for onlineEnrollment.
 - Will do the same for other forms later.
+
+## *As of July 14, 2022*
+- All of the forms in VB.net have now flat design.
+- I did however bring back the round edges. It is just not that aesthetic.
