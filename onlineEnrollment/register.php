@@ -67,7 +67,13 @@
         move_uploaded_file($fileTMP1, "{$path}/[BIRTH CERTIFICATE] {$lname}, {$fname}.{$fileAExt1}");
         move_uploaded_file($fileTMP2, "{$path}/[GOOD MORAL] {$lname}, {$fname}.{$fileAExt2}");
         move_uploaded_file($fileTMP3, "{$path}/[FORM 138] {$lname}, {$fname}.{$fileAExt3}");
-        insert($fname, $lname, $mname, $add, $email, $no, 0, $course, $gender);
+
+        if (strtoupper($mname) == "NONE") {
+            insert($fname, $lname, NULL, $add, $email, $no, 0, $course, $gender);
+        } else {
+            insert($fname, $lname, $mname, $add, $email, $no, 0, $course, $gender);
+        }
+        
         
     
     } elseif (isset($_POST['Y24'])) {
@@ -204,7 +210,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colegio de Montalban Enrollment</title>
+    <title>Online Enrollment</title>
     <link rel="stylesheet" href="registerStyle.css">
     <script src="registerJs.js"></script>
 </head>

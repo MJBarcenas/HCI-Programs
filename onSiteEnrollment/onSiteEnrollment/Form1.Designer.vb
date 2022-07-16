@@ -459,7 +459,7 @@ Partial Class Form1
         '
         'IconButton1
         '
-        Me.IconButton1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton1.BackColor = System.Drawing.Color.Black
         Me.IconButton1.FlatAppearance.BorderSize = 0
         Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Minus
@@ -474,7 +474,7 @@ Partial Class Form1
         '
         'IconButton3
         '
-        Me.IconButton3.BackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton3.BackColor = System.Drawing.Color.Black
         Me.IconButton3.FlatAppearance.BorderSize = 0
         Me.IconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.IconButton3.IconChar = FontAwesome.Sharp.IconChar.Multiply
@@ -489,7 +489,7 @@ Partial Class Form1
         '
         'IconButton2
         '
-        Me.IconButton2.BackColor = System.Drawing.Color.DodgerBlue
+        Me.IconButton2.BackColor = System.Drawing.Color.Black
         Me.IconButton2.Enabled = False
         Me.IconButton2.FlatAppearance.BorderSize = 0
         Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -506,7 +506,7 @@ Partial Class Form1
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label12.BackColor = System.Drawing.Color.Black
         Me.Label12.Font = New System.Drawing.Font("Poppins", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label12.ForeColor = System.Drawing.Color.White
         Me.Label12.Location = New System.Drawing.Point(752, 17)
@@ -518,7 +518,7 @@ Partial Class Form1
         'Panel1
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Panel1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Panel1.BackColor = System.Drawing.Color.Black
         Me.Panel1.Controls.Add(Me.Label12)
         Me.Panel1.Controls.Add(Me.IconButton3)
         Me.Panel1.Controls.Add(Me.IconButton2)

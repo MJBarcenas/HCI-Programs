@@ -1,4 +1,10 @@
 <?php
+function updateEnrolled($student) {
+    $file = fopen(addslashes("..\\enrolled.txt"), "a");
+    fwrite($file, "{$student}\n");
+    fclose($file);
+
+}
 function updateStudentNum() {
     $file = fopen("..\studentNum.txt", "r");
     $Num = fread($file, filesize("..\studentNum.txt")) + 1;
@@ -53,11 +59,18 @@ function insert($fname, $lname, $mname, $add, $email, $num, $ispaid, $course, $g
     try {
         if (count($result) > 0) {
             echo "<script>alert('You have already enrolled!')</script>";
+            
         }
     } catch (\Throwable $th) {
         $sql = "INSERT INTO students (studentnum, firstname, lastname, middlename, address, email, number, ispaid, year, accpass, course, gender) VALUES('{$studentNum}', '{$fname}', '{$lname}', '{$mname}', '{$add}', '{$email}', '{$num}', $ispaid, '{$year}', '{$password}', '{$course}', '{$gender}');";
         $conn->query($sql);
         $conn->close();
+
+        if (strtoupper($mname) == "NONE") {
+            updateEnrolled("{$fname} {$lname}");
+        } else {
+            updateEnrolled("{$fname} {$lname} {$mname}");
+        }
 
         echo "<script>alert('Enrolled Successfully!')</script>";
     } 
@@ -140,6 +153,12 @@ function update($fname, $lname, $mname, $add, $email, $num, $ispaid, $sNum) {
             $sql = "UPDATE students SET studentnum='{$studentNum}', firstname='{$fname}', lastname='{$lname}', middlename='{$mname}', address='{$add}', email='{$email}', number='{$num}', ispaid='{$ispaid}', year='{$year}', section='', accpass='{$password}' WHERE studentnum='{$sNum}';";
             $conn->query($sql);
             $conn->close();
+
+            if (strtoupper($mname) == "NONE") {
+                updateEnrolled("{$fname} {$lname}");
+            } else {
+                updateEnrolled("{$fname} {$lname} {$mname}");
+            }
 
             echo "<script>alert('Enrolled Successfully!')</script>";
         }
