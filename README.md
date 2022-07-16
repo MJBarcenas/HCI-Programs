@@ -47,3 +47,7 @@
 ## *As of July 14, 2022*
 - All of the forms in VB.net have now flat design.
 - I did however bring back the round edges. It is just not that aesthetic.
+
+## *As of July 16, 2022*
+- Fixed a problem on onlineEnrollment where students with "None" middlename is registring "None" middlename in database.
+- Fixed a problem on onlineEnrollment where students name are not registring in "enrolled.txt".
