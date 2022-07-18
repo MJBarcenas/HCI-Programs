@@ -51,3 +51,11 @@
 ## *As of July 16, 2022*
 - Fixed a problem on onlineEnrollment where students with "None" middlename is registring "None" middlename in database.
 - Fixed a problem on onlineEnrollment where students name are not registring in "enrolled.txt".
+
+## *As of July 19, 2022*
+- Added a shadow to the form so it will be differentiable to white backgrounds.
+- Added comments only on the Registration Form.
+- Added *ENROLL ALL* and *REGISTER* function to Registration Form.
+- OVRFs default file are now segregated for each year, each course, and each semester.
+- OVRFs for students are now also segregated.
+- Fixed the wrong file paths on generateOVRF() function.
