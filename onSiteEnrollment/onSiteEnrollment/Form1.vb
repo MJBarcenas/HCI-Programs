@@ -11,6 +11,17 @@ Public Class Form1
     Dim Y24FilesNames() As String = {"OVRF", "SSOG"}
     Dim transFiles() As String = {"", "", "", "", ""}
     Dim transFilesNames() As String = {"PICTURE", "BIRTH CERTIFICATE", "GOOD MORAL CERTIFICATE", "HONORABLE DISMISSAL", "TRANSCRIPT OF RECORDS"}
+
+    'Casting Shadow to the Form
+    Private Const CS_DROPSHADOW As Integer = 131072
+    Protected Overrides ReadOnly Property CreateParams() As System.Windows.Forms.CreateParams
+        Get
+            Dim cp As CreateParams = MyBase.CreateParams
+            cp.ClassStyle = cp.ClassStyle Or CS_DROPSHADOW
+            Return cp
+        End Get
+    End Property
+
     Sub clear()
         LName.Clear()
         FName.Clear()

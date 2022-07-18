@@ -6,6 +6,16 @@ Public Class Form1
     Dim con As New MySqlConnection(str)
     Dim studentNum As String
 
+    'Casting Shadow to the Form
+    Private Const CS_DROPSHADOW As Integer = 131072
+    Protected Overrides ReadOnly Property CreateParams() As System.Windows.Forms.CreateParams
+        Get
+            Dim cp As CreateParams = MyBase.CreateParams
+            cp.ClassStyle = cp.ClassStyle Or CS_DROPSHADOW
+            Return cp
+        End Get
+    End Property
+
     Sub loadData()
         Dim query As String = "select studentnum, firstname, lastname, middlename, address, email, number, ispaid, year, section from students where ispaid=False"
         Dim adpt As New MySqlDataAdapter(query, con)

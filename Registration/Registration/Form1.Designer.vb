@@ -39,6 +39,8 @@ Partial Class Form1
         Me.IconButton3 = New FontAwesome.Sharp.IconButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -49,19 +51,19 @@ Partial Class Form1
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 68)
+        Me.DataGridView1.Location = New System.Drawing.Point(11, 68)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(1550, 446)
+        Me.DataGridView1.Size = New System.Drawing.Size(1550, 445)
         Me.DataGridView1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(12, 580)
+        Me.Label1.Location = New System.Drawing.Point(11, 580)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(97, 38)
         Me.Label1.TabIndex = 1
@@ -78,7 +80,7 @@ Partial Class Form1
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox3.Location = New System.Drawing.Point(12, 520)
+        Me.TextBox3.Location = New System.Drawing.Point(11, 520)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.PlaceholderText = "Search for a Student..."
         Me.TextBox3.Size = New System.Drawing.Size(1550, 43)
@@ -88,7 +90,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(12, 678)
+        Me.Label3.Location = New System.Drawing.Point(11, 677)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(114, 38)
         Me.Label3.TabIndex = 1
@@ -118,16 +120,17 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button2.BackColor = System.Drawing.Color.Red
+        Me.Button2.Enabled = False
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(1223, 693)
+        Me.Button2.Location = New System.Drawing.Point(1223, 809)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(339, 52)
         Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Print OVRF"
+        Me.Button2.Text = "ENROLL ALL"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
@@ -137,7 +140,7 @@ Partial Class Form1
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(1223, 751)
+        Me.Button3.Location = New System.Drawing.Point(1223, 692)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(339, 52)
         Me.Button3.TabIndex = 3
@@ -162,7 +165,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(12, 631)
+        Me.Label4.Location = New System.Drawing.Point(11, 631)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(100, 38)
         Me.Label4.TabIndex = 1
@@ -171,7 +174,7 @@ Partial Class Form1
         'TextBox6
         '
         Me.TextBox6.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox6.Location = New System.Drawing.Point(208, 626)
+        Me.TextBox6.Location = New System.Drawing.Point(208, 627)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(970, 43)
@@ -190,7 +193,7 @@ Partial Class Form1
         Me.IconButton2.IconColor = System.Drawing.Color.White
         Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton2.IconSize = 20
-        Me.IconButton2.Location = New System.Drawing.Point(1515, 18)
+        Me.IconButton2.Location = New System.Drawing.Point(1515, 19)
         Me.IconButton2.Name = "IconButton2"
         Me.IconButton2.Size = New System.Drawing.Size(30, 28)
         Me.IconButton2.TabIndex = 9
@@ -208,7 +211,7 @@ Partial Class Form1
         Me.IconButton1.IconColor = System.Drawing.Color.White
         Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton1.IconSize = 20
-        Me.IconButton1.Location = New System.Drawing.Point(1479, 18)
+        Me.IconButton1.Location = New System.Drawing.Point(1479, 19)
         Me.IconButton1.Name = "IconButton1"
         Me.IconButton1.Size = New System.Drawing.Size(30, 28)
         Me.IconButton1.TabIndex = 10
@@ -226,7 +229,7 @@ Partial Class Form1
         Me.IconButton3.IconColor = System.Drawing.Color.White
         Me.IconButton3.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton3.IconSize = 20
-        Me.IconButton3.Location = New System.Drawing.Point(1551, 18)
+        Me.IconButton3.Location = New System.Drawing.Point(1551, 19)
         Me.IconButton3.Name = "IconButton3"
         Me.IconButton3.Size = New System.Drawing.Size(30, 28)
         Me.IconButton3.TabIndex = 8
@@ -254,16 +257,41 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.IconButton2)
         Me.Panel1.Location = New System.Drawing.Point(-9, -11)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1592, 54)
+        Me.Panel1.Size = New System.Drawing.Size(1592, 53)
         Me.Panel1.TabIndex = 13
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Location = New System.Drawing.Point(1223, 751)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(339, 52)
+        Me.Button5.TabIndex = 3
+        Me.Button5.Text = "REGISTER"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(795, 779)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(155, 51)
+        Me.Button6.TabIndex = 14
+        Me.Button6.Text = "Button6"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1574, 813)
+        Me.ClientSize = New System.Drawing.Size(1574, 876)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button4)
@@ -276,6 +304,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
         Me.Text = "Register"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -303,4 +332,6 @@ Partial Class Form1
     Friend WithEvents IconButton3 As FontAwesome.Sharp.IconButton
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class
