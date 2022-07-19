@@ -107,7 +107,7 @@ function update($fname, $lname, $mname, $add, $email, $num, $ispaid, $sNum) {
     $studentNum = generateStudentNum();
     $password = generatePassword();
 
-    $sql = "SELECT year FROM students WHERE (firstname='{$fname}' AND lastname='{$lname}') AND (ispaid=1 AND section!='')";
+    $sql = "SELECT year FROM students WHERE (firstname='{$fname}' AND lastname='{$lname}') AND (ispaid=1 AND section!='' AND checked=1)";
     $result = $conn->query($sql);
     $result = $result->fetch_array(MYSQLI_NUM);
 
@@ -150,7 +150,7 @@ function update($fname, $lname, $mname, $add, $email, $num, $ispaid, $sNum) {
                     }
                 }
             }
-            $sql = "UPDATE students SET studentnum='{$studentNum}', firstname='{$fname}', lastname='{$lname}', middlename='{$mname}', address='{$add}', email='{$email}', number='{$num}', ispaid='{$ispaid}', year='{$year}', section='', accpass='{$password}' WHERE studentnum='{$sNum}';";
+            $sql = "UPDATE students SET studentnum='{$studentNum}', firstname='{$fname}', lastname='{$lname}', middlename='{$mname}', address='{$add}', email='{$email}', number='{$num}', ispaid='{$ispaid}', year='{$year}', section='', accpass='{$password}', checked=0 WHERE studentnum='{$sNum}';";
             $conn->query($sql);
             $conn->close();
 
@@ -163,7 +163,7 @@ function update($fname, $lname, $mname, $add, $email, $num, $ispaid, $sNum) {
             echo "<script>alert('Enrolled Successfully!')</script>";
         }
     } catch (\Throwable $th) {
-        echo "<script>alert('You are not a student of Colegio de Montalban')</script>";
+        echo "<script>alert('You are not a student of [Sample University Name]')</script>";
     } 
 }
 ?>

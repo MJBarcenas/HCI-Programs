@@ -101,6 +101,7 @@ Public Class Form1
                     MI = row.Cells(3).Value.ToString()
                     year = row.Cells(8).Value.ToString()
                     Button1.Enabled() = True
+                    Button5.Enabled() = True
                 Catch ex As Exception
 
                 End Try
@@ -127,6 +128,7 @@ Public Class Form1
         Else
             TextBox4.ReadOnly() = False
             Button3.Enabled = True
+            Button5.Enabled = False
         End If
     End Sub
 
@@ -149,6 +151,7 @@ Public Class Form1
             MI = row.Cells(3).Value.ToString()
             year = row.Cells(8).Value.ToString()
 
+            Button5.Enabled() = True
             Button1.Enabled() = True
             TextBox4.ReadOnly() = False
         Catch ex As Exception
@@ -167,6 +170,7 @@ Public Class Form1
             'If it has no text, enabling the GET SECTION button
         ElseIf TextBox4.Text.Length() = 0 Then
             Button1.Enabled = True
+            Button5.Enabled = True
         Else
             disableButtons()
         End If
@@ -365,47 +369,12 @@ Public Class Form1
         Dim section As String = TextBox4.Text.ToUpper()
 
         Dim cmd As MySqlCommand
-        Dim cmd2 As MySqlCommand
-
-        Dim adapter As MySqlDataAdapter
-        Dim ds As New DataSet
-
-
         Try
-            'Get the year of the current student
-            adapter = New MySqlDataAdapter($"select year from students where studentnum='{studentNum}'", con)
-            adapter.Fill(ds)
-            Dim year = ds.Tables(0).Rows(0)(0)
-            ds.Reset()
-
-            'Select the coloumn value in DB table that we need
-            adapter = New MySqlDataAdapter($"select isfull, studentcount from {year}_year where section='{section}'", con)
-            adapter.Fill(ds)
-
-            Dim isFull As Boolean = Boolean.Parse(ds.Tables(0).Rows(0)(0).ToString())
-            Dim count As Integer = Integer.Parse(ds.Tables(0).Rows(0)(1).ToString())
-
-            'Change isFull value if it is greater than or equal to 40
-            count = count + 1
-            If count >= 40 Then
-                isFull = True
-            End If
-
-            'Commiting those changes to the database
-            con.Open()
-            cmd = con.CreateCommand()
-            cmd.CommandText = "update classes set studentcount=@studentcount, isfull=@isfull where section=@section"
-            cmd.Parameters.AddWithValue("@studentcount", count)
-            cmd.Parameters.AddWithValue("@isfull", isFull)
-            cmd.Parameters.AddWithValue("@section", section)
-            cmd.ExecuteNonQuery()
-            con.Close()
-
             'Updating the section of the student and registering them
             con.Open()
-            cmd2 = con.CreateCommand()
-            cmd2.CommandText = $"update students set checked=1 where studentnum='{studentNum}'"
-            cmd2.ExecuteNonQuery()
+            cmd = con.CreateCommand()
+            cmd.CommandText = $"UPDATE students SET checked=1 WHERE studentnum='{studentNum}'"
+            cmd.ExecuteNonQuery()
             con.Close()
 
             'Refreshing the status of form

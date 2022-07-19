@@ -4,13 +4,13 @@ Module Functions
         Dim currCount As Integer
 
         'Getting the number in studentNum.txt and converting it to integer
-
         Using Stream As StreamReader = New StreamReader("D:\Programming\Programs\studentNum.txt")
             currCount = CInt(Stream.ReadLine())
         End Using
         Return currCount
     End Function
 
+    'Update the student count with the 'count' parameter passed
     Public Sub updateStudentCount(ByVal count As Integer)
         Using Stream As StreamWriter = New StreamWriter("D:\Programming\Programs\studentNum.txt")
             Stream.WriteLine(CStr(count))
@@ -18,14 +18,12 @@ Module Functions
     End Sub
 
     'For generating random numbers which will then be used for generating sections and password
-
     Public Function GetRandom(ByVal Min As Integer, ByVal Max As Integer) As Integer
         Static Generator As System.Random = New System.Random()
         Return Generator.Next(Min, Max)
     End Function
 
     'Generating password using the getRandom() function
-
     Public Function getRandomPassword() As String
         Dim alpha As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         Dim num As String = "1234567890"
@@ -47,7 +45,6 @@ Module Functions
     End Function
 
     'Get the file that the user will upload and changing the color of buttons based on it
-
     Public Function getFile(ByVal sender As Object, ByVal type As String) As String
         Dim file As New OpenFileDialog
         file.Multiselect = False
@@ -57,7 +54,7 @@ Module Functions
             Dim path As String = file.FileName
             file.FileName = ""
             sender.text = "Great!"
-            sender.BackColor = Color.DodgerBlue
+            sender.BackColor = Color.Green
             Return path
         Else
             sender.text = "Invalid File!"
@@ -66,20 +63,17 @@ Module Functions
     End Function
 
     'Saving user uploaded files
-
     Public Sub saveFile(ByVal sourcePath As String, ByVal toPath As String)
         System.IO.File.Copy(sourcePath, toPath)
     End Sub
 
     'Update the list of enrolled students
-
     Public Sub updateEnrolled(ByVal studentNum As String)
         My.Computer.FileSystem.WriteAllText(
             "D:\Programming\Programs\enrolled.txt", $"{studentNum}{Environment.NewLine}", True)
     End Sub
 
     'Check if the student is enrolled, return false if the list is empty.
-
     Public Function ifEnrolled(ByVal studentNum As String) As Boolean
         Dim students As String = My.Computer.FileSystem.ReadAllText("D:\Programming\Programs\enrolled.txt")
         If Not students.Length = 0 Then

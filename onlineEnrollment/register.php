@@ -107,12 +107,22 @@
         $fileExt1 = explode('.', $fileName1);
         $fileAExt1 = strtolower(end($fileExt1));
 
-        update($fname, $lname, $mname, $add, $email, $no, 0, $sNum);
+        if (strtoupper($mname) == "NONE") {
+            update($fname, $lname, NULL, $add, $email, $no, 0, $sNum);
+        } else {
+            update($fname, $lname, $mname, $add, $email, $no, 0, $sNum);
+        }
 
         if (strtoupper($mname) == "NONE") {
+            if (file_exists("D:/Programming/Programs/uploads/2nd-4th Year/{$lname}, {$fname}")) {
+                rrmdir("D:/Programming/Programs/uploads/2nd-4th Year/{$lname}, {$fname}");
+            }
             $path = "D:/Programming/Programs/uploads/2nd-4th Year/{$lname}, {$fname}";
             mkdir($path);
         } else {
+            if (file_exists("D:/Programming/Programs/uploads/2nd-4th Year/{$lname}, {$fname}-{$mname}")) {
+                rrmdir("D:/Programming/Programs/uploads/2nd-4th Year/{$lname}, {$fname}-{$mname}");
+            }
             $path = "D:/Programming/Programs/uploads/2nd-4th Year/{$lname}, {$fname}-{$mname}";
             mkdir($path);
         }
@@ -200,7 +210,13 @@
         move_uploaded_file($fileTMP2, "{$path}/[TRANSCRIPT OF RECORDS] {$lname}, {$fname}.{$fileAExt2}");
         move_uploaded_file($fileTMP3, "{$path}/[HONORABLE DISMISSAL] {$lname}, {$fname}.{$fileAExt3}");
         move_uploaded_file($fileTMP4, "{$path}/[GOOD MORAL] {$lname}, {$fname}.{$fileAExt3}");
-        insert($fname, $lname, $mname, $add, $email, $no, 0, $course, $gender, $year);
+   
+        if (strtoupper($mname) == "NONE") {
+            insert($fname, $lname, NULL, $add, $email, $no, 0, $course, $gender, $year);
+        } else {
+            insert($fname, $lname, $mname, $add, $email, $no, 0, $course, $gender, $year);
+        }
+    
     }
 ?>
 
@@ -212,6 +228,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Enrollment</title>
     <link rel="stylesheet" href="registerStyle.css">
+    <link rel="shortcut icon" href="cdm.png" type="image/x-icon">
     <script src="registerJs.js"></script>
 </head>
 

@@ -79,7 +79,6 @@ Module Functions
         Try
             'Opening a word document based on the year of the student and current semester
             wordApp = New Application
-            MsgBox($"D:\Programming\Programs\Registration\Registration\Word Documents [OVRFs]\{year}_year\{course}\{semester}_sem.docx")
             wordApp.Documents.Open($"D:\Programming\Programs\Registration\Registration\Word Documents [OVRFs]\{year}_year\{course}\{semester}_sem.docx")
 
             'Changing the word document's content based on the student info
@@ -137,19 +136,19 @@ Module Functions
 
         Try
             'Get the year of the current student
-            adapter = New MySqlDataAdapter($"select year from students where studentnum='{studentNum}'", con)
+            adapter = New MySqlDataAdapter($"SELECT year FROM students WHERE studentnum='{studentNum}'", con)
             adapter.Fill(ds)
             Dim year = ds.Tables(0).Rows(0)(0)
             ds.Reset()
 
             'Get available section for the student
-            adapter = New MySqlDataAdapter($"select * from {year}_year where isfull=0 and year='{year}'", con)
+            adapter = New MySqlDataAdapter($"SELECT * FROM {year}_year WHERE isfull=0 and year='{year}'", con)
             adapter.Fill(ds)
 
             'If all sections are full, get all of the section
             If ds.Tables(0).Rows.Count = 0 Then
                 ds.Clear()
-                adapter = New MySqlDataAdapter($"select * from {year}_year where year={year}", con)
+                adapter = New MySqlDataAdapter($"SELECT * FROM {year}_year WHERE year={year}", con)
                 adapter.Fill(ds)
             End If
 
@@ -178,7 +177,7 @@ Module Functions
 
         Try
             'Getting the isfull and studentcount
-            adapter = New MySqlDataAdapter($"select isfull, studentcount from {section(0)}_year where section='{section}'", con)
+            adapter = New MySqlDataAdapter($"SELECT isfull, studentcount FROM {section(0)}_year WHERE section='{section}'", con)
             adapter.Fill(ds)
 
             'Converting those variables into usable ones
@@ -194,7 +193,7 @@ Module Functions
             'Commiting the changes made to the database
             con.Open()
             cmd = con.CreateCommand()
-            cmd.CommandText = "update classes set studentcount=@studentcount, isfull=@isfull where section=@section"
+            cmd.CommandText = $"UPDATE {section(0)}_year SET studentcount=@studentcount, isfull=@isfull WHERE section=@section"
             cmd.Parameters.AddWithValue("@studentcount", count)
             cmd.Parameters.AddWithValue("@isfull", isFull)
             cmd.Parameters.AddWithValue("@section", section)
@@ -204,7 +203,7 @@ Module Functions
             'Updating the section of the student as well as sending him his credentials on his email
             con.Open()
             cmd2 = con.CreateCommand()
-            cmd2.CommandText = $"update students set section=@section where studentnum='{studentNum}'"
+            cmd2.CommandText = $"UPDATE students SET section=@section WHERE studentnum='{studentNum}'"
             cmd2.Parameters.AddWithValue("@section", section)
             cmd2.ExecuteNonQuery()
             con.Close()
