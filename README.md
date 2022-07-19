@@ -72,3 +72,8 @@
 - There is now a safeguard when creating a folder when enrolling as 2nd-4th year.
 - Fixed a problem on onlineEnrollment where students with "None" middlename is registring "None" middlename in database.
 - Website has now an icon on its browser tab.
+
+## *As of July 19, 2022*
+
+[Android]
+- Login screen is now working.
