@@ -76,4 +76,5 @@
 ## *As of July 19, 2022*
 
 [Android]
+- Basic Android application.
 - Login screen is now working.
