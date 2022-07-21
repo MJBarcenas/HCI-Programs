@@ -13,6 +13,8 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
+import java.util.Arrays;
+
 public class Login extends AppCompatActivity {
 
     TextInputEditText txtInptStdntNum, txtInptAccpss;
@@ -49,13 +51,24 @@ public class Login extends AppCompatActivity {
                             String[] data = new String[2];
                             data[0] = studentnum;
                             data[1] = accpass;
-                            PutData putData = new PutData("http://192.168.1.7/programs/mobileApplication/Login/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.5/programs/mobileApplication/Login/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();
-                                    if (result.equals("Login Success")) {
-                                        Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                                    String[] results = result.split(",");
+
+                                    if (results[7].equals("Login Success")) {
+                                        Toast.makeText(getApplicationContext(),results[7],Toast.LENGTH_SHORT).show();
+
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        intent.putExtra("param", Arrays.copyOfRange(results, 0, 7));
+
+                                        //Bundle param = new Bundle();
+
+                                        //param.putStringArray("param", results);
+
+                                        //intent.putExtras(param);
+
                                         startActivity(intent);
                                         finish();
                                     } else {
@@ -67,7 +80,7 @@ public class Login extends AppCompatActivity {
                         }
                     });
                 } else {
-                    Toast.makeText(getApplicationContext(), "All fields areADF required", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "All fields are required", Toast.LENGTH_SHORT).show();
                 }
             }
         });
