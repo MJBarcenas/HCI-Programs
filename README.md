@@ -78,3 +78,10 @@
 [Android]
 - Basic Android application.
 - Login screen is now working.
+
+## *As of July 19, 2022*
+
+[Android]
+- Display of OVRF and Schedule is now working. Although I should create a schedule.pdf file generator on Registration Form [VB.net].
+- Loading name, year, course, section, and studentnum to android application is also working.
+- However, installing the app to a real device will result on the app not working properly because the app cannot have the full persmission to write on the device's directories.
