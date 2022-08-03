@@ -10,18 +10,21 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.nio.file.Files;
+import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
-
-    PDFView ovrf, schedule;
     Bundle parameters;
+    Button ovrf, schedule;
     String[] parametersList;
     TextView name, courseandsec, studentnum;
 
@@ -30,61 +33,71 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ovrf = findViewById(R.id.ovrf);
-        schedule = findViewById(R.id.schedule);
-
         //parameters = getIntent().getExtras();
 
         parametersList = getIntent().getStringArrayExtra("param");
 
         name = findViewById(R.id.name);
-        String fullname = parametersList[3] + ", " + parametersList[2] + " " + parametersList[4];
-        name.setText(fullname);
-
         studentnum = findViewById(R.id.snum);
-        studentnum.setText(parametersList[0]);
-
         courseandsec = findViewById(R.id.courseandsec);
-        String courseAndSec = parametersList[5] + " " + parametersList[6];
+        ovrf = findViewById(R.id.ovrf_btn);
+        schedule = findViewById(R.id.schedule_btn);
+
+        ovrf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), OVRFActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        schedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ScheduleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        String fullname = parametersList[3] + ", " + parametersList[2] + " " + parametersList[4];
+        String course = parametersList[5];
+        String section = parametersList[6];
+        char year = section.charAt(0);
+        String courseAndSec = course + " " + section;
+        String snum = parametersList[0];
+
+        name.setText(fullname);
+        studentnum.setText(snum);
         courseandsec.setText(courseAndSec);
 
         //Toast.makeText(getApplicationContext(), String.join(",", parametersList), Toast.LENGTH_LONG);
 
-        DownloadPDFfromURL();
+        DownloadPDFfromURL(year, course, snum, fullname);
+    }
 
+    private void DownloadPDFfromURL(char y, String course, String snum, String name) {
+        String year = String.valueOf(y);
+
+        new DownloadTXT()
+                .execute("http://192.168.1.52/programs/semester.txt", "semester.txt");
+
+        File sem = new File(Environment.getExternalStorageDirectory()
+                + "/TXTs/" + "semester.txt");
         try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
+            Scanner reader = new Scanner(sem);
+            String semester = reader.nextLine();
+
+            new DownloadPDF()
+                    .execute(String.format("http://192.168.1.52/programs/Registration/Registration/Schedules/%s_year/%s/%s_sem.pdf", year, course, semester),
+                            "sched.pdf");
+
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
-        ViewPDF();
-    }
-
-    private void DownloadPDFfromURL() {
         new DownloadPDF()
-                .execute("http://192.168.1.5/programs/Registration/Registration/OVRFs/1_year/BSIT/22-00124 Barcenas, Michael Justin .pdf",
+                .execute(String.format("http://192.168.1.52/programs/Registration/Registration/OVRFs/%s_year/%s/%s %s.pdf", year, course, snum, name),
                         "ovrf.pdf");
 
-        new DownloadPDF()
-                .execute("http://192.168.1.5/programs/Registration/Registration/OVRFs/1_year/BSIT/22-00124 Barcenas, Michael Justin .pdf",
-                        "sched.pdf");
-    }
-
-    public void ViewPDF() {
-        File ovrfFile = new File(Environment.getExternalStorageDirectory()
-                + "/PDFs/" + "ovrf.pdf");
-        File schedFile = new File(Environment.getExternalStorageDirectory()
-                + "/PDFs/" + "sched.pdf");
-
-        Uri ovrfpath = Uri.fromFile(ovrfFile);
-
-        Uri schedpath = Uri.fromFile(schedFile);
-
-        ovrf.fromUri(ovrfpath).load();
-
-        schedule.fromUri(schedpath).load();
-
-        //pdfView.fromFile(pdfFile).load();
     }
 }

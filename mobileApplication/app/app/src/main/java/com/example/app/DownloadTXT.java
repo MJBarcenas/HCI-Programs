@@ -7,7 +7,7 @@ import android.os.Environment;
 import java.io.File;
 import java.io.IOException;
 
-public class DownloadPDF extends AsyncTask<String, Void, Void> {
+public class DownloadTXT extends AsyncTask<String, Void, Void> {
 
     Context ctx;
     @Override
@@ -18,7 +18,7 @@ public class DownloadPDF extends AsyncTask<String, Void, Void> {
 
         String extStrorageDirectory = Environment.getExternalStorageDirectory().toString();
 
-        File folder = new File(extStrorageDirectory + File.separator + "PDFs");
+        File folder = new File(extStrorageDirectory + File.separator + "TXTs");
         folder.mkdir();
 
         File pdfFile = new File(folder + File.separator + fileName);
@@ -36,3 +36,4 @@ public class DownloadPDF extends AsyncTask<String, Void, Void> {
 
     }
 }
+

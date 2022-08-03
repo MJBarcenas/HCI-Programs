@@ -51,13 +51,14 @@ public class Login extends AppCompatActivity {
                             String[] data = new String[2];
                             data[0] = studentnum;
                             data[1] = accpass;
-                            PutData putData = new PutData("http://192.168.1.5/programs/mobileApplication/Login/login.php", "POST", field, data);
+
+                            PutData putData = new PutData("http://192.168.1.52/programs/mobileApplication/Login/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();
                                     String[] results = result.split(",");
 
-                                    if (results[7].equals("Login Success")) {
+                                    if (results.length > 1 && results[7].equals("Login Success")) {
                                         Toast.makeText(getApplicationContext(),results[7],Toast.LENGTH_SHORT).show();
 
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
