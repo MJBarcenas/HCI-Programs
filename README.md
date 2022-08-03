@@ -85,3 +85,11 @@
 - Display of OVRF and Schedule is now working. Although I should create a schedule.pdf file generator on Registration Form [VB.net].
 - Loading name, year, course, section, and studentnum to android application is also working.
 - However, installing the app to a real device will result on the app not working properly because the app cannot have the full persmission to write on the device's directories.
+
+## *As of August 3, 2022*
+
+[Android]
+
+- View OVRF and Schedule has now their own activity.
+- I think it is now complete.
+- All there is left to do is to try it from the start and the project can be now considered as complete.
